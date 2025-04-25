@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
 import Honda from './pages/Honda';
-import Blog from './pages/blog';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
 
