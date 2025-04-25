@@ -6,7 +6,7 @@ import About from './pages/About';
 import Service from './pages/Service';
 import Honda from './pages/Honda';
 import Blog from './pages/blog';
-import Contact from './pages/contact';
+import Contact from './pages/Contact';
 
 
 function App() {
