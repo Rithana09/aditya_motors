@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {/* Logo & Description */}
           <div className="text-left">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 cursor-pointer">
               <Link to="/">
                 <img
                   src="/adityalogo.png"
@@ -30,12 +30,13 @@ const Footer = () => {
             <p className="text-gray-400 font-[Hind_Vadodara] text-sm sm:text-base mb-4 mt-2">
               Contact us today to start designing a custom bike that's uniquely yours.
             </p>
-            <div className="flex space-x-4 text-sm sm:text-base mt-4">
-              <FaFacebookF />
-              <FaTwitter />
-              <FaInstagram />
-              <FaYoutube />
+            <div className="flex space-x-4 cursor-pointer text-sm sm:text-base mt-4">
+              <FaFacebookF className="hover:text-red-600 transition-colors duration-200" />
+              <FaTwitter className="hover:text-red-600 transition-colors duration-200" />
+              <FaInstagram className="hover:text-red-600 transition-colors duration-200" />
+              <FaYoutube className="hover:text-red-600 transition-colors duration-200" />
             </div>
+
           </div>
 
           {/* Contact Info */}
@@ -46,11 +47,11 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mt-1 font-[Hind_Vadodara]" />
                 <span>GP Rajarathnam Rd, A Block, Milk Colony, Subramanyanagar,2 State, Rajajinagar, Bengaluru, Karnataka 560010</span>
               </li>
-              <li className="flex items-center font-[Hind_Vadodara] gap-2">
+              <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
                 <FaPhoneAlt />
                 <span>+91 9343225633</span>
               </li>
-              <li className="flex items-center font-[Hind_Vadodara] gap-2">
+              <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
                 <FaEnvelope />
                 <span>adityamotorstech@gmail.com</span>
               </li>
@@ -58,7 +59,7 @@ const Footer = () => {
           </div>
 
           {/* Explore Us */}
-          <div className="text-left">
+          <div className="text-left cursor-pointer">
             <h2 className="text-lg sm:text-xl md:text-2xl font-[jost] font-[jost] font-bold mb-4">Explore Us</h2>
             <ul className="space-y-2 font-[Hind_Vadodara] text-sm sm:text-base text-gray-300">
               <li>Home</li>

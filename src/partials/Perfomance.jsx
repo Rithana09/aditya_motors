@@ -59,32 +59,32 @@ const Performance = () => {
   return (
     <>
       {/* Performance Section */}
-     <div className="bg-white px-4 sm:px-6 md:px-8  py-8 md:py-10 lg:py-12 flex justify-center items-center min-h-screen">
+      <div className="bg-white px-4 sm:px-6 md:px-8  py-8 md:py-10 lg:py-12 flex justify-center items-center min-h-screen">
 
         <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-y-8 md:gap-y-10 lg:gap-y-0 md:gap-x-16 lg:gap-x-20 h-full">
 
           {/* Left Side - Text and Image slide up */}
           <motion.div
-  ref={leftRef}
-  initial={{ opacity: 0, y: 80 }}
-  animate={leftInView ? { opacity: 1, y: 0 } : {}}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="w-full lg:w-full" 
->
-  <h4 className="font-[jost] tracking-widest uppercase mb-2 text-sm md:text-base"
-  style= {{ color: "#D33523" }}>
-    PERFORMANCE
-  </h4>
-  <h2 className="w-full lg:w-4/5 text-2xl font-[Hind_Vadodara] md:text-3xl lg:text-[60px] font-bold text-black-700 mt-2">
-    IMPROVE GENERAL RIDEABILITY
-  </h2>
+            ref={leftRef}
+            initial={{ opacity: 0, y: 80 }}
+            animate={leftInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full lg:w-full"
+          >
+            <h4 className="font-[jost] tracking-widest uppercase mb-2 text-sm md:text-base"
+              style={{ color: "#D33523" }}>
+              PERFORMANCE
+            </h4>
+            <h2 className="w-full lg:w-4/5 text-2xl font-[Hind_Vadodara] md:text-3xl lg:text-[60px] font-bold text-black-700 mt-2">
+              IMPROVE GENERAL RIDEABILITY
+            </h2>
 
-  <img
-    src="/bikee1.jpg"
-    alt="Bike"
-    className="w-full rounded-lg object-cover"
-  />
-</motion.div>
+            <img
+              src="/bikee1.jpg"
+              alt="Bike"
+              className="w-full rounded-lg object-cover"
+            />
+          </motion.div>
 
           {/* Right Side - Slide in from right */}
           <motion.div
@@ -121,19 +121,19 @@ const Performance = () => {
         <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-y-6 md:gap-y-8 md:gap-x-16 lg:gap-x-40 text-center">
           <div className="w-full md:w-1/3">
             <p className="text-black-600 font-[Hind_Vadodara]">Garage Store</p>
-            <p className="text-4xl md:text-6xl font-[jost] lg:text-8xl font-extrabold" style= {{ color: "#D33523" }}>
+            <p className="text-4xl md:text-6xl font-[jost] lg:text-8xl font-extrabold" style={{ color: "#D33523" }}>
               <AnimatedCounter target={13} />
             </p>
           </div>
           <div className="w-full md:w-1/3">
             <p className="text-black-600 font-[Hind_Vadodara]">Loyal Customer</p>
-            <p className="text-4xl md:text-6xl font-[jost] lg:text-8xl font-extrabold" style= {{ color: "#D33523" }}>
+            <p className="text-4xl md:text-6xl font-[jost] lg:text-8xl font-extrabold" style={{ color: "#D33523" }}>
               <AnimatedCounter target={250} />
             </p>
           </div>
           <div className="w-full md:w-1/3">
             <p className="text-black-600 font-[Hind_Vadodara]">Mechanic</p>
-            <p className="text-4xl md:text-6xl font-[jost] lg:text-8xl font-extrabold" style= {{ color: "#D33523" }}>
+            <p className="text-4xl md:text-6xl font-[jost] lg:text-8xl font-extrabold" style={{ color: "#D33523" }}>
               <AnimatedCounter target={48} />
             </p>
           </div>

@@ -43,7 +43,7 @@ const DreamMotorbike = () => {
         {/* Left Content */}
         <div className="lg:w-1/2 w-full flex flex-col justify-start space-y-6">
           <p className="font-[jost] tracking-widest font-semibold"
-          style= {{ color: "#D33523" }}>HIGH PERFORMANCE</p>
+            style={{ color: "#D33523" }}>HIGH PERFORMANCE</p>
           <h1 className="text-3xl sm:text-4xl font-[jost] lg:text-5xl font-extrabold leading-tight">
             LET’S BUILD YOUR<br />DREAM MOTORBIKE
           </h1>
@@ -52,14 +52,14 @@ const DreamMotorbike = () => {
           </p>
 
           {/* Red Dropdown Boxes */}
-          <div className="bg-red-600 text-white rounded-md divide-y divide-red-500 shadow-lg">
+          <div className="bg-red-600 cursor-pointer text-white rounded-md divide-y divide-red-500 shadow-lg">
             {dropdownData.map((item, index) => (
               <div key={index}>
                 <button
                   onClick={() => toggleDropdown(index)}
-                  className="flex justify-between items-center w-full px-6 py-4 focus:outline-none"
+                  className="flex justify-between items-center w-full px-6 py-4 focus:outline-none cursor-pointer"
                 >
-                  <span className="font-semibold text-left">{item.title}</span>
+                  <span className="font-semibold cursor-pointer text-left">{item.title}</span>
                   {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
                 </button>
                 {openIndex === index && (

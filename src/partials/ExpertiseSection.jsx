@@ -36,7 +36,7 @@ const ExpertiseSection = () => {
           variants={slideUp}
           viewport={{ once: true }}
           className="font-[jost] tracking-widest font-semibold"
-          style= {{ color: "#D33523" }}
+          style={{ color: "#D33523" }}
         >
           WHAT WE OFFER
         </motion.p>

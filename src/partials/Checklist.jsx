@@ -6,66 +6,65 @@ const Checklist = () => {
 
   const services = [
     {
-       label: "Air Filter Cleaning",
-       image: "/aircleaning.webp",
-        description: "At Aditya Motors, we understand that your bike deserves the best care..Keeping your bike’s air filter clean is essential for optimal engine performance. A clogged or dirty air filter can reduce airflow to the engine, causing it to work harder and use more fuel. Regular cleaning of the air filter ensures that only clean air enters the engine, helping it run smoothly and efficiently. This service helps improve combustion, reduces engine wear, and enhances fuel economy, all while keeping emissions low. At Aditya Motors, we ensure your bike gets the best care to keep it running at its best, ensuring both longevity and performance."
-       },
-    { 
-      label: "Vehicle Washing",
-       image: "/vehiclewashing.jpg", 
-       description: "At Aditya Motors, we understand that your bike deserves the best care. Our Vehicle Washing service goes beyond just cleaning the exterior. We provide a thorough wash that targets hard-to-reach areas like the chain, spokes, and underbody, ensuring your bike runs smoothly and looks pristine.A clean bike not only enhances its appearance but also helps maintain its performance by removing dirt and grime that can cause wear and tear over time. Our experts use high-quality cleaning products to gently wash your bike, preserving its finish and ensuring all components are properly cleaned."
-       },
-    { 
-      label: "Self Motor Checking",
-       image: "/selfmotor.jpeg", 
-       description: "At Aditya Motors, our Self Motor Checking service ensures your bike’s engine runs smoothly. We inspect the motor for any issues, check oil levels, test compression, and listen for unusual sounds. This thorough inspection helps identify any potential problems early, allowing for timely repairs and ensuring your bike operates at its best. Regular motor checks are essential for maintaining engine performance, improving fuel efficiency, and extending the life of your bike."
-       },
-    { 
-      label: "Chain Lubrication",
-       image: "/chainlubrication.jpg",
-        description: "Our Chain Lubrication Service ensures smooth anAt Aditya Motors, we understand the importance of a well-maintained bike chain for a smooth and efficient ride. Our Chain Lubrication Service ensures that your bike’s chain is properly lubricated to reduce wear, improve shifting, and prevent rust. A properly lubricated chain provides smoother gear transitions, reduces friction, and enhances the overall performance of your bike, allowing you to ride with ease and confidence." 
-
+      label: "Air Filter Cleaning",
+      image: "/aircleaning.webp",
+      description: "Keeping your bike’s air filter clean is essential for optimal engine performance. A clogged or dirty air filter can reduce airflow to the engine, causing it to work harder and use more fuel. Regular cleaning of the air filter ensures that only clean air enters the engine, helping it run smoothly and efficiently. This service helps improve combustion, reduces engine wear, and enhances fuel economy, all while keeping emissions low. At Aditya Motors, we ensure your bike gets the best care to keep it running at its best, ensuring both longevity and performance."
     },
-    { 
-      label: "Nut and Bolt Adjustments",
-       image: "/nutandbolt.jpg",
-        description: "Our Nut and Bolt Adjustment service ensures that all the critical components of your bike are securely tightened. We meticulously inspect and adjust the nuts, bolts, and fasteners across various parts of your bike, such as the frame, handlebars, wheels, and engine. This service is essential for maintaining the safety and performance of your bike, preventing any issues that could arise from loose or misaligned parts. At Aditya Motors, we provide thorough attention to detail to make sure your bike remains in top-notch condition for optimal riding experience."
-       },
-    { 
-      label: "Vehicle Polishing",
-       image: "/vehiclepolishing.jpg",
-        description: "Give your bike a shiny, smooth finish with our professional vehicle polishing service. We clean and polish your bike's exterior to remove dirt, scratches, and oxidation. This service enhances the bike's appearance and helps maintain its paintwork, ensuring it looks as good as new. Regular polishing not only improves the aesthetics of your bike but also helps in protecting the paint from the elements, offering a layer of protection against dirt, water, and UV damage."
-       },
-    { 
-      label: "Engine Oil Cleaning/Replacement",
-       image: "/engineoil.jpg",
-        description: "The Engine Oil Cleaning/Replacement service is typically provided by professional bike service centers or motorcycle repair shops. In the context of your code, the service is part of a general bike maintenance checklist offered by Aditya Motors, which ensures that your bike runs smoothly by replacing old oil, cleaning engine components, and replacing the oil with fresh, high-quality oil."
-       },
-    { 
-      label: "EV Bike Service",
-       image: "/evservice.jpg",
-        description: "Our EV Bike Service ensures the smooth operation of your electric vehicle. We perform a detailed inspection of the electric motor to identify any wear or damage. Additionally, we check the battery’s performance, its connections, and test the overall efficiency of the system. This service helps keep your electric bike running at its best, ensuring maximum range, smooth operation, and long-term reliability." 
-      },
-    { 
-      label: "Tyre Pressure Check",
-       image: "/tyre.jpg",
-        description: "Ensure your bike’s tyres are properly inflated for optimal performance and safety. Over-inflated or under-inflated tyres can reduce handling, increase wear, and decrease fuel efficiency. At Aditya Motors, we check and adjust the tyre pressure to the manufacturer’s recommended levels, ensuring your bike rides smoothly and safely on every journey."
-       },
-    { 
-      label: "Spark Plug Cleaning/Replacement",
-       image: "/sparkplug.jpg",
-        description: "The Spark Plug Cleaning/Replacement service involves cleaning or replacing the spark plugs of your bike to ensure it runs smoothly. Spark plugs are essential for engine performance as they ignite the fuel-air mixture in the engine. Over time, spark plugs can accumulate carbon and dirt, leading to poor engine performance, misfires, or difficulty starting the bike."
-       },
     {
-       label: "Carburator Cleaning",
-        image: "/carburator.jpg",
-         description: "The Carburetor Cleaning service is essential for maintaining your bike's engine performance. Over time, dirt, fuel deposits, and other blockages can accumulate inside the carburetor, leading to poor engine performance, reduced fuel efficiency, and difficulty in starting the bike.At Aditya Motors, we ensure that your bike’s carburetor is cleaned with precision to restore your bike's optimal performance." 
-        },
-    { 
+      label: "Vehicle Washing",
+      image: "/vehiclewashing.jpg",
+      description: "At Aditya Motors, we understand the importance of maintaining your bike's appearance and performance. Our professional bike washing service ensures that your bike is thoroughly cleaned, looking pristine, and running smoothly. Whether it's dirt from the roads or grime from daily use, we take care of it all!"
+    },
+    {
+      label: "Self Motor Checking",
+      image: "/selfmotor.jpeg",
+      description: "At Aditya Motors, we prioritize the performance and safety of your vehicle. Our Self-Motor Checking Service ensures that your bike’s motor is operating smoothly and efficiently, helping to prevent unexpected breakdowns and costly repairs. Whether you are experiencing unusual noises, starting issues, or simply want to ensure everything is in top condition, our skilled technicians are here to help."
+    },
+    {
+      label: "Chain Lubrication",
+      image: "/chainlubrication.jpg",
+      description: "At Aditya Motors, we know how crucial a well-maintained chain is for the smooth operation of your bike. Our Chain Lubrication Service ensures that your bike’s chain operates efficiently, preventing wear and tear while enhancing overall performance. Proper lubrication reduces friction, protects against rust, and prolongs the life of your bike’s chain and sprockets."
+    },
+    {
+      label: "Nut and Bolt Adjustments",
+      image: "/nutandbolt.jpg",
+      description: "At Aditya Motors, we believe in ensuring every part of your bike is securely fastened for optimal performance and safety. Our Nut and Bolt Adjustment Service is designed to tighten and check all critical fasteners on your bike, ensuring that nothing is loose or out of place. Regular tightening of nuts and bolts is essential for preventing damage, avoiding safety risks, and maintaining the integrity of your bike."
+    },
+    {
+      label: "Vehicle Polishing",
+      image: "/vehiclepolishing.jpg",
+      description: "At Aditya Motors, we believe that your bike deserves to look as great as it performs. Our Vehicle Polishing Service is designed to restore and enhance your bike's appearance, giving it a sleek, shiny finish while protecting the paintwork from the elements. Whether you're looking to restore an older bike or maintain the shine of a new one, our professional polishing service ensures your bike stands out on the road."
+    },
+    {
+      label: "Engine Oil Cleaning/Replacement",
+      image: "/engineoil.jpg",
+      description: "At Aditya Motors, we understand that the engine is the heart of your bike, and keeping it running smoothly is essential for optimal performance. Our Engine Oil Cleaning and Replacement Service ensures that your bike’s engine stays lubricated, clean, and efficient, reducing friction, preventing overheating, and prolonging engine life. Regular oil changes and cleaning are crucial for maintaining your bike's performance and preventing costly repairs."
+    },
+    {
+      label: "EV Bike Service",
+      image: "/evservice.jpg",
+      description: "At Aditya Motors, we are proud to offer top-notch EV Bike Service to keep your electric bike in peak condition. As electric bikes continue to grow in popularity, proper maintenance is crucial for ensuring longevity, performance, and efficiency. Our dedicated EV bike service focuses on the unique needs of electric vehicles, providing you with expert care and high-quality service."
+    },
+    {
+      label: "Tyre Pressure Check",
+      image: "/tyre.jpg",
+      description: "At Aditya Motors, we understand that proper tyre pressure is essential for the safe and efficient operation of your bike. That’s why we offer a thorough Tyre Pressure Check Service to ensure that your bike's tyres are properly inflated. Maintaining the correct tyre pressure not only enhances safety but also improves fuel efficiency, handling, and the overall lifespan of your tyres."
+    },
+    {
+      label: "Spark Plug Cleaning/Replacement",
+      image: "/sparkplug.jpg",
+      description: "We know that a healthy spark plug is essential for your bike’s engine performance. Spark plugs play a crucial role in igniting the air-fuel mixture inside the engine, ensuring smooth and efficient combustion. Our Spark Plug Cleaning and Replacement Service is designed to maintain or restore your bike's engine performance, improve fuel efficiency, and reduce emissions by keeping your spark plugs in top condition."
+    },
+    {
+      label: "Carburator Cleaning",
+      image: "/carburator.jpg",
+      description: "We understand that the carburetor is a vital component in your bike's engine, responsible for mixing air and fuel in the correct proportions for combustion. Over time, dirt, debris, and carbon buildup can clog the carburetor, leading to poor engine performance, rough idling, decreased fuel efficiency, and starting issues. Our Carburetor Cleaning Service ensures that your carburetor functions properly, maintaining the smooth operation and efficiency of your bike's engine."
+    },
+    {
       label: "Brake Shoe/Pad Roughing/Replacement",
-       image: "/shoe.jpg",
-        description: "The Brake Shoe/Pad Roughing/Replacement service is typically provided by professional motorcycle service centers, bike repair shops, or authorized bike dealerships. These services are essential for maintaining the braking efficiency and safety of your motorcycle or bike. The technicians inspect the brake shoes or pads, roughen or replace them to ensure that the brakes perform optimally and that your bike's braking system is responsive and effective." 
-      },
+      image: "/shoe.jpg",
+      description: "We prioritize your safety and the smooth operation of your bike, and we know that the braking system is one of the most important aspects of any vehicle. Over time, brake shoes and pads can wear down or become contaminated, leading to reduced braking efficiency and increased stopping distances. Our Brake Shoe/Pad Roughing and Replacement Service ensures that your bike's braking system is in top condition, providing you with the safety and performance you need on the road."
+    },
   ];
 
   // Group services into rows of 4
@@ -86,7 +85,7 @@ const Checklist = () => {
           </h2>
 
           <p className="text-sm sm:text-base font-[Hind_Vadodara] text-black mb-8 max-w-3xl mx-auto">
-            Here at Aditya Motors, we provide a General Bike Service to ensure your bike stays in optimal condition. 
+            Here at Aditya Motors, we provide a General Bike Service to ensure your bike stays in optimal condition.
             Our comprehensive checklist includes:
           </p>
 
@@ -100,7 +99,7 @@ const Checklist = () => {
                     <button
                       key={actualIndex}
                       onClick={() => handleToggle(actualIndex)}
-                      className={`w-[22%] px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 
+                      className={`w-full sm:w-[45%] md:w-[22%] px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 
                         border text-sm sm:text-base font-semibold 
                         rounded-full truncate text-center 
                         transition duration-300
@@ -126,11 +125,11 @@ const Checklist = () => {
                   >
                     {/* Description on the left */}
                     <div className="flex-1 text-left">
-                      <p className="text-black font-[jost,sans-serif] lg:text-xl lg:w-4/5 text-base leading-relaxed">{services[activeIndex].description}</p>
+                      <p className="text-black lg:text-xl lg:w-4/5 text-base">{services[activeIndex].description}</p>
                     </div>
 
                     {/* Image on the right */}
-                    <div className="flex-shrink-0 w-48 h-48 mt-4 mr-5 sm:mt-0">
+                    <div className="flex-shrink-0 lg:mr-10 w-48 h-48 mt-4 sm:mt-0">
                       <img
                         src={services[activeIndex].image}
                         alt={services[activeIndex].label}

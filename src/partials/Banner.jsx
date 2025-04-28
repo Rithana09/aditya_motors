@@ -1,19 +1,23 @@
 import React from "react";
 import Header from "./Header";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative w-full h-screen text-white">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/hondabanner5.webp')",
+          backgroundPosition: "center center", 
+          backgroundSize: "cover", 
         }}
       >
-
-<div className="absolute inset-0 bg-black opacity-0"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
       </div>
 
       {/* Header */}
@@ -37,14 +41,15 @@ const Banner = () => {
             </p>
 
             <p className="text-white font-[Hind_Vadodara] text-lg sm:text-lg md:text-xl max-w-md leading-relaxed mb-6 opacity-90">
-              From routine checks to major fixes, Aditya Motors is your bike’s
-              guardian. Quality care, every time.
+              From routine checks to major fixes, Aditya Motors is your bike’s guardian. Quality care, every time.
             </p>
           </div>
 
           <div>
-            <button className="font-[jost,sans-serif] bg-[#D33523] text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium"
-          >
+            <button
+              onClick={() => navigate('/contact')}
+              className="font-[jost,sans-serif] bg-[#D33523] text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium cursor-pointer"
+            >
               CONSULT NOW →
             </button>
           </div>

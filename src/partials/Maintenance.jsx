@@ -31,7 +31,7 @@ const Maintenance = () => {
       >
         {/* Heading */}
         <p className="font-[jost] text-lg sm:text-xl md:text-2xl font-semibold mb-4"
-         style= {{ color: "#D33523" }}>
+          style={{ color: "#D33523" }}>
           PROFESSIONAL SERVICES
         </p>
 
@@ -62,8 +62,8 @@ const Maintenance = () => {
             alt="Service"
             className="
               w-3/4 sm:w-4/5 md:w-[80%] lg:w-[80%]
-              h-auto object-contain rounded-lg mx-auto
-            "
+              h-auto object-contain rounded-lg mx-auto"
+            
           />
         </div>
       </motion.div>

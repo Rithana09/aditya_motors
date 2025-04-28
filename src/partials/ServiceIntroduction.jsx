@@ -43,7 +43,7 @@ const ServiceIntroduction = () => {
             issue, we’re here to help.
           </p>
 
-          <button className="mt-6 font-[jost] text-red-600 hover:text-white text-sm md:text-base flex items-center gap-2">
+          <button className="mt-6 font-[jost] text-red-600 hover:text-white text-sm md:text-base flex items-center gap-2 cursor-pointer">
             READ MORE <span>&rarr;</span>
           </button>
 
@@ -96,9 +96,11 @@ const ServiceIntroduction = () => {
             />
           </div>
 
-          <button className="text-red-600 font-[jost] hover:text-white text-sm md:text-base flex items-center gap-2 mt-4">
-            READ MORE <span>&rarr;</span>
-          </button>
+          <div className="lg:mb-10">
+            <button className="text-red-600 font-[jost] lg:mb-10 hover:text-white text-sm md:text-base flex items-center gap-2 cursor-pointer ">
+              READ MORE <span>&rarr;</span>
+            </button>
+          </div>
         </motion.div>
       </div>
     </div>

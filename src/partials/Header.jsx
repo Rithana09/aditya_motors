@@ -6,9 +6,14 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
   };
 
   return (
@@ -64,18 +69,33 @@ const Header = () => {
             Contact
           </Link>
 
-          {/* Bike Icon and Phone Number */}
+          {/* Bike Icon and Phone Number (Desktop) */}
           <div className="flex items-center space-x-4 pl-4">
-            <div className="flex items-center space-x-2 text-white cursor-pointer hover:text-red-600 transition-colors duration-200">
+            <a
+              href="tel:+919343225633" // This makes the phone number clickable
+              className="flex items-center space-x-2 text-white cursor-pointer hover:text-red-600 transition-colors duration-200"
+            >
               <FaBicycle size={20} />
               <span className="font-medium text-xl">+91 9343225633</span>
-            </div>
+            </a>
           </div>
 
           {/* Search Icon */}
-          <button className="text-white hover:text-gray-600 transition-colors duration-200">
+          <button
+            onClick={toggleSearch}
+            className="text-white hover:text-gray-600 cursor-pointer transition-colors duration-200"
+          >
             <FiSearch size={20} />
           </button>
+
+          {/* Search Input */}
+          {isSearchOpen && (
+            <input
+              type="text"
+              placeholder="Search..."
+              className="ml-4 p-2 rounded bg-gray-700 text-white w-64"
+            />
+          )}
         </nav>
 
         {/* Hamburger Icon for Mobile */}
@@ -95,8 +115,11 @@ const Header = () => {
           <Link to="/about" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             About
           </Link>
-          <Link to="/pages" className="text-white font-medium py-2 uppercase block hover:text-red-600">
-            Pages
+          <Link to="/service" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+            Services
+          </Link>
+          <Link to="/honda" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+            Honda
           </Link>
           <Link to="/blog" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             Blog
@@ -107,10 +130,13 @@ const Header = () => {
 
           {/* Bike Icon and Phone Number (Mobile) */}
           <div className="flex items-center space-x-4 pt-4">
-            <div className="flex items-center space-x-2 text-white cursor-pointer hover:text-red-600 transition-colors duration-200">
+            <a
+              href="tel:+919343225633" // This makes the phone number clickable in the mobile menu
+              className="flex items-center space-x-2 text-white cursor-pointer hover:text-red-600 transition-colors duration-200"
+            >
               <FaBicycle size={20} />
               <span className="font-medium text-xl">+91 9343225633</span>
-            </div>
+            </a>
           </div>
         </div>
       )}

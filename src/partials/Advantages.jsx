@@ -52,10 +52,10 @@ export default function Advantages() {
             className="rounded-lg w-full object-cover"
           />
           <div className="absolute bottom-0 left-0 bg-zinc-900 p-2 sm:p-4 max-w-[140px] sm:max-w-[200px]">
-  <p className="text-red-600 font-medium font-[jost] text-xs sm:text-sm tracking-wider"
-  style= {{ color: "#D33523" }}>EXPERIENCED SINCE</p>
-  <p className="text-white text-3xl sm:text-6xl font-[jost] font-bold">2005</p>
-</div>
+            <p className="text-red-600 font-medium font-[jost] text-xs sm:text-sm tracking-wider"
+              style={{ color: "#D33523" }}>EXPERIENCED SINCE</p>
+            <p className="text-white text-3xl sm:text-6xl font-[jost] font-bold">2005</p>
+          </div>
 
         </div>
 
@@ -63,7 +63,7 @@ export default function Advantages() {
         <div className="space-y-8">
           <div
             className={` font-medium tracking-wider font-[jost] mb-2 ${slideUpClass}`}
-            ref={(el) => (advantageRefs.current[1] = el)}  style= {{ color: "#D33523" }}
+            ref={(el) => (advantageRefs.current[1] = el)} style={{ color: "#D33523" }}
           >
             OUR ADVANTAGES
           </div>

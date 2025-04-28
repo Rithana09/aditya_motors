@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
           href="https://wa.me/919343225633"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
+          className="text-red-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
         >
           <FaWhatsapp className="w-6 h-6 sm:w-10 sm:h-10" />
         </a>
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           href="https://www.instagram.com/aditya.motors.bengaluru/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
+          className="text-red-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
         >
           <FaInstagram className="w-6 h-6 sm:w-10 sm:h-10" />
         </a>
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           href="https://t.me/aditya_motors"  
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
+          className="text-red-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
         >
           <FaTelegram className="w-6 h-6 sm:w-10 sm:h-10" />
         </a>

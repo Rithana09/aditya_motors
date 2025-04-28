@@ -11,11 +11,11 @@ export default function BlogSection() {
         <div className="w-full lg:w-2/3">
           {/* Featured Article */}
           <motion.article
-  className="mb-12"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.4 }} // Updated transition duration to 0.4
->
+            className="mb-12"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }} // Updated transition duration to 0.4
+          >
             <div className="relative">
               <img
                 src="/blogg1.jpg"
@@ -49,7 +49,7 @@ export default function BlogSection() {
             <a
               href="#"
               className="font-medium font-[jost] flex items-center gap-1 mt-4 hover:underline"
-              style= {{ color: "#D33523" }}
+              style={{ color: "#D33523" }}
             >
               READ MORE <ArrowRight className="h-4 w-4" />
             </a>
@@ -57,11 +57,11 @@ export default function BlogSection() {
 
           {/* Second Article */}
           <motion.article
-  className="mb-12"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.4 }} // Updated transition duration to 0.4
->
+            className="mb-12"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }} // Updated transition duration to 0.4
+          >
             <div className="relative">
               <img
                 src="/blog2.jpg"
@@ -95,7 +95,7 @@ export default function BlogSection() {
             <a
               href="#"
               className="font-medium flex font-[jost] items-center gap-1 mt-4 hover:underline"
-              style= {{ color: "#D33523" }}
+              style={{ color: "#D33523" }}
             >
               READ MORE <ArrowRight className="h-4 w-4" />
             </a>
@@ -104,36 +104,36 @@ export default function BlogSection() {
 
         {/* Sidebar */}
         <div className="w-full lg:w-1/3">
-        <motion.h1
-  className="text-2xl font-bold font-[jost] text-gray-900"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.4 }} // Faster transition
->
-  Aditya Motors
-</motion.h1>
+          <motion.h1
+            className="text-2xl font-bold font-[jost] text-gray-900"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }} // Faster transition
+          >
+            Aditya Motors
+          </motion.h1>
 
-<motion.p
-  className="mt-4 text-base md:text-sm text-gray-600 font-[Hind_Vadodara]"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.4 }} // Faster transition
->
-  Lorem ipsum dolor sit amet...
-</motion.p>
-          
+          <motion.p
+            className="mt-4 text-base md:text-sm text-gray-600 font-[Hind_Vadodara]"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }} // Faster transition
+          >
+            For the love of biking...
+          </motion.p>
+
           <motion.div
             className="flex mt-5 mb-5"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.2 }}
           >
             <input
               type="text"
               placeholder="Type & hit Enter..."
-              className="w-full px-4 py-2 border border-gray-300 focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 focus:outline-none cursor-pointer"
             />
-            <button className="bg-[#D33523] text-white px-4 py-2">
+            <button className="bg-[#D33523] text-white px-4 py-2 cursor-pointer">
               <Search className="h-5 w-5" />
             </button>
           </motion.div>
@@ -154,7 +154,7 @@ export default function BlogSection() {
               className="flex gap-4 mb-6"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.2 }}
             >
               <img
                 src="/blog3.jpg"
@@ -176,7 +176,7 @@ export default function BlogSection() {
               className="flex gap-4 mb-6"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.2 }}
             >
               <img
                 src="/blog4.jpg"
@@ -198,7 +198,7 @@ export default function BlogSection() {
               className="flex gap-4 mb-6"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.2 }}
             >
               <img
                 src="/blog5.jpg"
@@ -222,7 +222,7 @@ export default function BlogSection() {
               className="text-xl font-bold border-b font-[jost] border-gray-200 pb-4 mb-3"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.2 }}
             >
               Follow
             </motion.h3>
@@ -259,9 +259,9 @@ export default function BlogSection() {
                   Let's Build Your Dream Motorbike
                 </h1>
                 <p className="text-lg text-white text-center mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie viverra.
+                  Aditya Motors is your bike’s guardian.
                 </p>
-                <button className="bg-[#D33523] text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium">
+                <button className="bg-[#D33523] text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium cursor-pointer">
                   Consult Now →
                 </button>
               </div>

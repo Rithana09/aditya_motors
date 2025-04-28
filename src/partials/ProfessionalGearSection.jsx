@@ -13,7 +13,7 @@ const AccordionItem = ({ title, children }) => {
       className="border-b border-gray-700"
     >
       <button
-        className="w-full bg-black text-white text-left px-4 py-3 font-semibold flex justify-between items-center"
+        className="w-full bg-black text-white cursor-pointer text-left px-4 py-3 font-semibold flex justify-between items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}
@@ -49,7 +49,7 @@ const ProfessionalGearSection = () => {
         custom={0}
         className="text-center mb-10"
       >
-        <p className="text-sm font-[jost] font-semibold  tracking-wide" style= {{ color: "#D33523" }}>WHY CHOOSE US</p>
+        <p className="text-sm font-[jost] font-semibold  tracking-wide" style={{ color: "#D33523" }}>WHY CHOOSE US</p>
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-[jost] font-bold text-black mt-2">
           WE ARE QUALIFIED &<br />
           <span className="text-black lg:text-6xl font-[jost]">PROFESSIONAL</span>
@@ -98,18 +98,21 @@ const ProfessionalGearSection = () => {
             variants={fadeUpVariant}
             custom={1}
             className="text-2xl md:text-3xl font-[jost] font-bold mb-6"
-            style= {{ color: "#D33523" }}>
+            style={{ color: "#D33523" }}>
             We realize that you lead a busy life, so we have made it<br />
             easy for you to drop off your vehicle 24/7.
           </motion.h2>
 
           <motion.div variants={fadeUpVariant} custom={2} className="space-y-4 font-[Hind_Vadodara]">
-            <AccordionItem title="MAXIMUM SPEED & STABILITY">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-              there live the blind texts. Separated they live in Bookmarksgrove right at the coast.
+            <AccordionItem title="What services does Aditya Motors offer?">
+              Aditya Motors offers comprehensive bike services for all brands, including authorized Honda services, repairs, maintenance, and genuine parts replacement
             </AccordionItem>
-            <AccordionItem title="ACCELERATING YOUR RIDING STYLE" />
-            <AccordionItem title="THE PROFESSIONAL GEARHEADS" />
+            <AccordionItem title="Are you an authorized dealer for any brands?">
+              Yes, Aditya Motors is an authorized dealer for Honda, providing specialized services for Honda bikes and scooters.
+            </AccordionItem>
+            <AccordionItem title="What brands of bikes and scooters do you service?">
+              We service all brands of bikes and scooters, ensuring top-notch care for your vehicle.
+            </AccordionItem>
           </motion.div>
 
           <motion.p
@@ -117,16 +120,15 @@ const ProfessionalGearSection = () => {
             custom={3}
             className="text-gray-600 mt-6"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sollicitudin libero. Quisque quis
-            leo sed nibh porta condimentum. Vivamus sit amet venenatis nulla. Aenean eget interdum dolor.
-            Nullam varius, est non porta fermentum, nisl felis pretium est, ac facilisis leo libero ut metus.
-            Donec non erat imperdiet, cursus odio eu, ultricies nisi.
+            Our team of expert technicians is trained
+            to handle the unique needs of your Honda motorcycle
+            or scooter, ensuring it continues to perform at its best.
           </motion.p>
 
           <motion.button
             variants={fadeUpVariant}
             custom={4}
-            className="mt-6 px-8 py-3 border border-red-500 text-white bg-[#D33523] font-semibold font-[jost] hover:bg-red-600 hover:text-white transition"
+            className="mt-6 px-8 py-3 border border-red-500 text-white bg-[#D33523] font-semibold font-[jost] hover:bg-red-600 hover:text-white transition cursor-pointer"
           >
             READ MORE →
           </motion.button>

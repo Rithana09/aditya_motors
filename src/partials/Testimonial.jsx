@@ -52,7 +52,7 @@ const Testimonial = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="uppercase font-[jost] text-sm md:text-base mb-3" style= {{ color: "#D33523" }}>
+            <h3 className="uppercase font-[jost] text-sm md:text-base mb-3" style={{ color: "#D33523" }}>
               WHAT OUR CLIENT SAY
             </h3>
             <h2 className="text-3xl sm:text-4xl md:text-5xl  font-[jost] lg:text-6xl font-bold leading-tight mb-4">
@@ -113,9 +113,8 @@ const Testimonial = () => {
                 <button
                   key={index}
                   onClick={() => handleDotClick(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-colors duration-300 ${
-                    index === activeIndex ? "bg-red-500" : "bg-gray-400"
-                  }`}
+                  className={`w-2.5 h-2.5 rounded-full cursor-pointer transition-colors duration-300 ${index === activeIndex ? "bg-red-500" : "bg-gray-400"
+                    }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}

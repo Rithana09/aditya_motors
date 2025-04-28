@@ -14,13 +14,13 @@ const PartnerSection = () => {
       id: 1,
       name: 'Logo 1',
       logo: (
-        <div className="flex items-center">
+        <div className="flex cursor-pointer items-center">
           <div className="flex space-x-1">
             <div className="w-6 h-6 sm:w-8 sm:h-8 bg-red-600 rounded"></div>
             <div className="w-6 h-6 sm:w-8 sm:h-8 bg-yellow-400 rounded"></div>
             <div className="w-6 h-6 sm:w-8 sm:h-8 bg-blue-500 rounded"></div>
           </div>
-          <span className="ml-2 text-gray-700 font-medium text-base sm:text-xl">logoipsum</span>
+          <span className="ml-2 text-gray-700 cursor-pointer font-medium text-base sm:text-xl">logoipsum</span>
           <span className="text-xs sm:text-sm align-top">®</span>
         </div>
       ),
@@ -29,7 +29,7 @@ const PartnerSection = () => {
       id: 2,
       name: 'Logo 2',
       logo: (
-        <div className="flex items-center">
+        <div className="flex cursor-pointer items-center">
           <div className="mr-2 text-green-500">
             <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" strokeWidth="2" stroke="currentColor" fill="none" />
@@ -37,7 +37,7 @@ const PartnerSection = () => {
               <path d="M7 12H17" strokeWidth="2" stroke="currentColor" />
             </svg>
           </div>
-          <span className="text-gray-800 font-medium text-base sm:text-xl tracking-wider">LOGOIPSUM</span>
+          <span className="text-gray-800 font-medium cursor-pointer text-base sm:text-xl tracking-wider">LOGOIPSUM</span>
         </div>
       ),
     },
@@ -45,7 +45,7 @@ const PartnerSection = () => {
       id: 3,
       name: 'Logo 3',
       logo: (
-        <div className="flex items-center">
+        <div className="flex cursor-pointer items-center">
           <div className="mr-2 text-blue-500">
             <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor">
               <circle cx="12" cy="12" r="3" fill="currentColor" />
@@ -53,7 +53,7 @@ const PartnerSection = () => {
               <circle cx="18" cy="12" r="3" fill="currentColor" />
             </svg>
           </div>
-          <span className="text-blue-700 font-medium text-base sm:text-xl">logoipsum</span>
+          <span className="text-blue-700 font-medium cursor-pointer text-base sm:text-xl">logoipsum</span>
           <span className="text-xs sm:text-sm align-top">®</span>
         </div>
       ),
@@ -62,7 +62,7 @@ const PartnerSection = () => {
       id: 4,
       name: 'Logo 4',
       logo: (
-        <div className="flex items-center">
+        <div className="flex cursor-pointer items-center">
           <div className="mr-2">
             <svg className="w-6 h-6 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none">
               <path d="M15 2.5L2.5 15L15 27.5L27.5 15L15 2.5Z" fill="#F97316" stroke="#333" strokeWidth="1" />
@@ -70,7 +70,7 @@ const PartnerSection = () => {
             </svg>
           </div>
           <div>
-            <span className="text-gray-800 font-medium text-base sm:text-xl">Logo<span className="text-orange-500">ipsum</span></span>
+            <span className="text-gray-800 font-medium cursor-pointer text-base sm:text-xl">Logo<span className="text-orange-500">ipsum</span></span>
             <div className="text-xs leading-none">Tech&Co.</div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const PartnerSection = () => {
       id: 5,
       name: 'Logo 5',
       logo: (
-        <div className="flex items-center">
+        <div className="flex cursor-pointer items-center">
           <div className="mr-2 text-red-500">
             <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none">
               <rect x="2" y="4" width="2" height="16" fill="currentColor" />
@@ -90,7 +90,7 @@ const PartnerSection = () => {
               <rect x="18" y="4" width="2" height="16" fill="currentColor" />
             </svg>
           </div>
-          <span className="text-gray-800 font-medium text-sm sm:text-base tracking-wider">
+          <span className="text-gray-800 cursor-pointer font-medium text-sm sm:text-base tracking-wider">
             LOGO<span className="text-red-500">IPSUM</span>
           </span>
         </div>
@@ -108,7 +108,7 @@ const PartnerSection = () => {
           transition={{ duration: 1 }}
         >
           <h3 className="font-medium tracking-wide uppercase text-sm sm:text-base mb-2"
-          style= {{ color: "#D33523" }}>
+            style={{ color: "#D33523" }}>
             BRANDS THAT SUPPORT US
           </h3>
           <h2 className="text-3xl font-[Hind_Vadodara] sm:text-4xl md:text-5xl font-bold text-gray-900">

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import Header from "./Header";
 import Layout from "./Layout";
 
@@ -7,7 +7,7 @@ const TopBanner = ({ title, subtitle, image, showHeader = true }) => {
   return (
     <Layout>
       <div className="relative w-full text-white overflow-hidden h-64 sm:h-80 md:h-96">
-        {/* Full-width Image Container */}
+
         <div className="absolute inset-0">
           {/* Background Image */}
           <div
@@ -30,17 +30,17 @@ const TopBanner = ({ title, subtitle, image, showHeader = true }) => {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
             viewport={{ once: true }}
             className="text-red-600 uppercase tracking-wide text-xs sm:text-sm md:text-base"
           >
             {subtitle}
           </motion.p>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
             className="font-bold mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-6xl"
           >

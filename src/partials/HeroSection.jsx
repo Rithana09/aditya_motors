@@ -80,7 +80,7 @@ const HeroSection = () => {
           >
             <span
               className="
-                w-8 h-8 sm:w-10 sm:h-10 
+                w-8 h-8 sm:w-10 sm:h-10 cursor-pointer
                 rounded-full border-2 border-[#D33523]
                 flex items-center justify-center 
                 bg-[#D33523] text-red-600 font-bold
@@ -88,7 +88,7 @@ const HeroSection = () => {
             >
               ▶
             </span>
-            <span className="uppercase font-[jost] tracking-wider">
+            <span className="uppercase font-[jost] cursor-pointer tracking-wider">
               Watch Now
             </span>
           </button>

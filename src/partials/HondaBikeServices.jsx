@@ -46,7 +46,7 @@ const HondaBikeServices = () => {
       {/* Heading */}
       <motion.h2
         className="text-4xl font-[jost] font-bold text-center mb-12 uppercase tracking-tight"
-        style= {{ color: "#D33523" }}
+        style={{ color: "#D33523" }}
         initial="hidden"
         whileInView="visible"
         variants={slideUp}
@@ -71,9 +71,7 @@ const HondaBikeServices = () => {
               <h3 className="text-xl font-semibold font-[jost] text-gray-900">{service.title}</h3>
             </div>
             <p className="text-gray-600 flex-1 font-[Hind_Vadodara] text-sm sm:text-base mb-6">{service.description}</p>
-            <button className="mt-6 self-start bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition ease-in-out duration-300">
-              Learn More
-            </button>
+
           </motion.div>
         ))}
       </div>

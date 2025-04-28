@@ -33,7 +33,7 @@ const HondaService = () => {
   return (
     <div className="py-10 px-4 sm:px-8 md:px-16 lg:px-20">
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
-        
+
         {/* Left Side - Heading, Description, Image */}
         <div className="w-full lg:w-1/2">
           <motion.h2
@@ -55,7 +55,7 @@ const HondaService = () => {
           >
             At Aditya Motors, we are proud to be an authorized Honda dealer,
             offering{' '}
-            <span className="text-red-600 font-[Hind_Vadodara] underline">
+            <span className="text-red-600 font-[Hind_Vadodara] cursor-pointer underline">
               specialized services for all Honda bikes
             </span>. Our team of expert technicians is trained to handle the unique
             needs of your Honda motorcycle or scooter, ensuring it continues to
@@ -65,18 +65,18 @@ const HondaService = () => {
           </motion.p>
 
           <motion.div
-  initial="hidden"
-  whileInView="visible"
-  variants={slideUp}
-  viewport={{ once: false }} // This will ensure the transition happens every time it comes into view
-  className="w-full"
->
-  <img
-    src="/honda5.avif"
-    alt="Honda Service"
-    className="rounded-lg w-full h-64 sm:h-80 md:h-[22rem] object-cover"
-  />
-</motion.div>
+            initial="hidden"
+            whileInView="visible"
+            variants={slideUp}
+            viewport={{ once: false }} // This will ensure the transition happens every time it comes into view
+            className="w-full"
+          >
+            <img
+              src="/honda5.avif"
+              alt="Honda Service"
+              className="rounded-lg w-full h-64 sm:h-80 md:h-[22rem] object-cover"
+            />
+          </motion.div>
         </div>
 
         {/* Right Side - Cards */}

@@ -23,7 +23,7 @@ const ProfessionalService = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.5 }}
             className="font-[jost] text-xl sm:text-2xl lg:text-2xl font-semibold"
-            style= {{ color: "#D33523" }}  >
+            style={{ color: "#D33523" }}  >
             PROFESSIONAL SERVICE
           </motion.p>
 
@@ -52,8 +52,8 @@ const ProfessionalService = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="font-[jost,sans-serif] text-white bg-[#D33523] mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium"
-            >
+            className="font-[jost,sans-serif] text-white bg-[#D33523] mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium cursor-pointer"
+          >
             CONSULT NOW →
           </motion.button>
         </div>
