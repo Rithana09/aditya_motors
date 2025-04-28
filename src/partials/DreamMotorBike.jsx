@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const dropdownData = [
   {
@@ -23,10 +24,22 @@ const DreamMotorbike = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // Animation variants for each section
+  const slideUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
+
   return (
     <div className="flex flex-col px-6 lg:px-20 py-10 gap-10">
       {/* Top Section */}
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={slideUp}
+        viewport={{ once: true }}
+        className="flex flex-col lg:flex-row items-start justify-between gap-10"
+      >
         {/* Left Content */}
         <div className="lg:w-1/2 w-full flex flex-col justify-start space-y-6">
           <p className="text-red-600 tracking-widest font-semibold">HIGH PERFORMANCE</p>
@@ -68,13 +81,23 @@ const DreamMotorbike = () => {
 
         {/* Right Image */}
         <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start">
-          <img
-            src="/servicee1.jpg"
+          <motion.img
+            src="/motor1.avif"
             alt="Motorbike Builder"
             className="rounded-lg w-full max-w-[95%] max-h-[500px] object-contain"
+            initial="hidden"
+            whileInView="visible"
+            variants={slideUp}
+            viewport={{ once: true }}
           />
 
-          <div className="mt-6 lg:ml-40 text-center lg:text-left space-y-2">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={slideUp}
+            viewport={{ once: true }}
+            className="mt-6 lg:ml-40 text-center lg:text-left space-y-2"
+          >
             <p className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-black">
               WE KEPT WHAT WE
             </p>
@@ -86,9 +109,9 @@ const DreamMotorbike = () => {
             </p>
 
             <div className="w-full sm:w-100 h-1 bg-red-600 mt-10 rounded"></div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

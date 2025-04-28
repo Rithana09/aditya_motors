@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-const PartnersSection = () => {
+const PartnerSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // When the component mounts, trigger the animation
+    setIsVisible(true);
+  }, []);
+
   const partners = [
     {
       id: 1,
@@ -93,20 +101,31 @@ const PartnersSection = () => {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-10 sm:mb-12">
+        <motion.div
+          className="text-center mb-10 sm:mb-12"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h3 className="text-red-600 font-medium tracking-wide uppercase text-sm sm:text-base mb-2">
             Brands that support us
           </h3>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
             OUR PARTNERS
           </h2>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 items-center justify-items-center">
           {partners.map((partner) => (
-            <div key={partner.id} className="flex items-center justify-center">
+            <motion.div
+              key={partner.id}
+              className="flex items-center justify-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: partner.id * 0.2 }}
+            >
               {partner.logo}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -114,4 +133,4 @@ const PartnersSection = () => {
   );
 };
 
-export default PartnersSection;
+export default PartnerSection;

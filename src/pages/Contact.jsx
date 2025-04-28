@@ -7,16 +7,16 @@ import Footer from '../partials/Footer'
 const Contact = () => {
   return (
     <>
-      <div>
-        <TopBanner
-          title=" GET IN TOUCH"
-          subtitle="CONTACT US"
-          image="/contact1.jpg"
-          showHeader={true}
-        />
-        <ContactSection />
-        <MapLocation />
-        <Footer />
+       <div>
+       <TopBanner
+  title=" GET IN TOUCH"
+  subtitle="CONTACT US"
+  image="/contact1.jpg"
+  showHeader={true}
+/>
+<ContactSection />
+<MapLocation />
+<Footer />
       </div>
     </>
   )

@@ -1,34 +1,21 @@
-import React from "react"
-import { Search, Calendar, Clock, ArrowRight } from "lucide-react"
+import React from "react";
+import { Search, Calendar, Clock, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function BlogSection() {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <header className="bg-white shadow">
-        <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900">Aditya Motors</h1>
-          <div className="mt-4 md:mt-0 w-full md:w-auto">
-            <div className="flex">
-              <input
-                type="text"
-                placeholder="Type & hit Enter..."
-                className="w-full px-4 py-2 border border-gray-300 focus:outline-none"
-              />
-              <button className="bg-red-600 text-white px-4 py-2">
-                <Search className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8 max-w-screen-lg">
+      <main className="container mx-auto px-6 py-8 flex flex-col lg:flex-row gap-10 max-w-screen-lg">
         {/* Articles Section */}
         <div className="w-full lg:w-2/3">
           {/* Featured Article */}
-          <article className="mb-12">
+          <motion.article
+            className="mb-12"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="relative">
               <img
                 src="/blogg1.jpg"
@@ -57,16 +44,23 @@ export default function BlogSection() {
               </a>
             </h2>
             <p className="text-gray-600 mt-2">
-            Summer Bike Care Tips for Peak Performance | Bike Service Repair in Bangalore
-            
+              Summer Bike Care Tips for Peak Performance | Bike Service Repair in Bangalore
             </p>
-            <a href="#" className="text-red-600 font-medium flex items-center gap-1 mt-4 hover:underline">
+            <a
+              href="#"
+              className="text-red-600 font-medium flex items-center gap-1 mt-4 hover:underline"
+            >
               READ MORE <ArrowRight className="h-4 w-4" />
             </a>
-          </article>
+          </motion.article>
 
           {/* Second Article */}
-          <article className="mb-12">
+          <motion.article
+            className="mb-12"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="relative">
               <img
                 src="/blog2.jpg"
@@ -76,7 +70,7 @@ export default function BlogSection() {
                 className="w-full h-auto object-cover"
               />
               <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1">
-                NEWS & GUIDE
+                NEWS & EVENT
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm text-gray-500 mt-4">
@@ -95,22 +89,72 @@ export default function BlogSection() {
               </a>
             </h2>
             <p className="text-gray-600 mt-2">
-            Summer Bike Care Tips for Peak Performance | Bike Service Repair in Bangalore
+              Summer Bike Care Tips for Peak Performance | Bike Service Repair in Bangalore
             </p>
-            <a href="#" className="text-red-600 font-medium flex items-center gap-1 mt-4 hover:underline">
+            <a
+              href="#"
+              className="text-red-600 font-medium flex items-center gap-1 mt-4 hover:underline"
+            >
               READ MORE <ArrowRight className="h-4 w-4" />
             </a>
-          </article>
+          </motion.article>
         </div>
 
         {/* Sidebar */}
         <div className="w-full lg:w-1/3">
+          <motion.h1
+            className="text-2xl font-bold text-gray-900"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Aditya Motors
+          </motion.h1>
+
+          <motion.p
+            className="mt-4 text-base md:text-sm text-gray-600"
+            style={{ fontFamily: '"Hind Vadodara", sans-serif' }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </motion.p>
+          
+          <motion.div
+            className="flex mt-5 mb-5"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <input
+              type="text"
+              placeholder="Type & hit Enter..."
+              className="w-full px-4 py-2 border border-gray-300 focus:outline-none"
+            />
+            <button className="bg-red-600 text-white px-4 py-2">
+              <Search className="h-5 w-5" />
+            </button>
+          </motion.div>
+
           {/* Tips and Tricks Section */}
           <div className="mb-8">
-            <h3 className="text-xl font-bold border-b border-gray-200 pb-4 mb-6">Tips and Trick</h3>
+            <motion.h3
+              className="text-xl font-bold border-b border-gray-200 pb-4 mb-6"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Tips and Trick
+            </motion.h3>
 
             {/* Tip 1 */}
-            <div className="flex gap-4 mb-6">
+            <motion.div
+              className="flex gap-4 mb-6"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <img
                 src="/blog3.jpg"
                 alt="Custom motorcycle"
@@ -124,10 +168,15 @@ export default function BlogSection() {
                   <a href="#">The Top 10 Custom Motorcycles of 2020</a>
                 </h4>
               </div>
-            </div>
+            </motion.div>
 
             {/* Tip 2 */}
-            <div className="flex gap-4 mb-6">
+            <motion.div
+              className="flex gap-4 mb-6"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <img
                 src="/blog4.jpg"
                 alt="Motorcycle show"
@@ -141,10 +190,15 @@ export default function BlogSection() {
                   <a href="#">The Best of The One Motorcycle Show Contest</a>
                 </h4>
               </div>
-            </div>
+            </motion.div>
 
             {/* Tip 3 */}
-            <div className="flex gap-4 mb-6">
+            <motion.div
+              className="flex gap-4 mb-6"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <img
                 src="/blog5.jpg"
                 alt="Custom builder"
@@ -158,37 +212,62 @@ export default function BlogSection() {
                   <a href="#">How To Become A Professional Custom Builder</a>
                 </h4>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Follow Section */}
           <div className="mb-8">
-  <h3 className="text-xl font-bold border-b border-gray-200 pb-4 mb-6">Follow</h3>
-  <div className="flex gap-2">
-    <a href="#" className="bg-blue-600 text-white p-2 hover:opacity-90">
-      <i className="fab fa-facebook text-white text-xl"></i>
-    </a>
-    <a href="#" className="bg-blue-400 text-white p-2 hover:opacity-90">
-      <i className="fab fa-twitter text-white text-xl"></i>
-    </a>
-    <a href="#" className="bg-pink-600 text-white p-2 hover:opacity-90">
-      <i className="fab fa-pinterest text-white text-xl"></i>
-    </a>
-    <a href="#" className="bg-purple-600 text-white p-2 hover:opacity-90">
-      <i className="fab fa-instagram text-white text-xl"></i>
-    </a>
-    <a href="#" className="bg-red-600 text-white p-2 hover:opacity-90">
-      <i className="fab fa-youtube text-white text-xl"></i>
-    </a>
-  </div>
-</div>
+            <motion.h3
+              className="text-xl font-bold border-b border-gray-200 pb-4 mb-3"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Follow
+            </motion.h3>
+            {/* Social Icons */}
+            <div className="flex gap-2 mb-8">
+              <a href="#" className="bg-blue-600 text-white p-2 hover:opacity-90">
+                <i className="fab fa-facebook text-white text-xl"></i>
+              </a>
+              <a href="#" className="bg-blue-400 text-white p-2 hover:opacity-90">
+                <i className="fab fa-twitter text-white text-xl"></i>
+              </a>
+              <a href="#" className="bg-pink-600 text-white p-2 hover:opacity-90">
+                <i className="fab fa-pinterest text-white text-xl"></i>
+              </a>
+              <a href="#" className="bg-purple-600 text-white p-2 hover:opacity-90">
+                <i className="fab fa-instagram text-white text-xl"></i>
+              </a>
+              <a href="#" className="bg-red-600 text-white p-2 hover:opacity-90">
+                <i className="fab fa-youtube text-white text-xl"></i>
+              </a>
+            </div>
+            {/* Ad Banner Section */}
+            <div
+              className="relative w-[224px] h-[611px] bg-cover bg-center"
+              style={{ backgroundImage: 'url(adityabannerr.png)' }}
+            >
+              <div className="absolute inset-0 bg-black opacity-80 flex flex-col items-center justify-center p-6">
+                <img
+                  src="/adityalogo.png"
+                  alt="Logo"
+                  className="w-24 h-24 object-contain mb-5"
+                />
+                <h1 className="text-3xl font-bold text-red-600 text-center mb-2">
+                  Let's Build Your Dream Motorbike
+                </h1>
+                <p className="text-lg text-white text-center mb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie viverra.
+                </p>
+                <button className="bg-red-600 text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium">
+                  Consult Now →
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-black text-white py-8 text-center">
-        <p>Copyright © 2024 Aditya Motors All rights reserved Designed by HURRYEP TECHNOLOGIES</p>
-      </footer>
     </div>
-  )
+  );
 }

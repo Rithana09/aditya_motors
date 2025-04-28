@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import React, { useEffect, useState, useRef } from "react";
+import { useInView, motion } from "framer-motion";
 
 const performanceData = [
   {
@@ -27,10 +27,8 @@ const performanceData = [
 
 const AnimatedCounter = ({ target, duration = 1000 }) => {
   const [count, setCount] = useState(0);
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Animate only once
-    threshold: 0.3,     // Percentage of element visible before triggering
-  });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.3 });
 
   useEffect(() => {
     if (inView) {
@@ -49,21 +47,28 @@ const AnimatedCounter = ({ target, duration = 1000 }) => {
     }
   }, [inView, target, duration]);
 
-  return (
-    <span ref={ref}>
-      {count}
-    </span>
-  );
+  return <span ref={ref}>{count}</span>;
 };
 
 const Performance = () => {
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+  const leftInView = useInView(leftRef, { once: true, amount: 0.3 });
+  const rightInView = useInView(rightRef, { once: true, amount: 0.3 });
+
   return (
     <>
       {/* Performance Section */}
-      <div className="bg-white px-4 sm:px-6 md:px-8 lg:px-8 py-8 md:py-10 lg:py-12 flex justify-center items-center h-screen">
+      <div className="bg-white px-4 sm:px-6 md:px-8 lg:px-8 py-8 md:py-10 lg:py-12 flex justify-center items-center min-h-screen">
         <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-start gap-y-8 md:gap-y-10 lg:gap-y-0 md:gap-x-16 lg:gap-x-20">
-          {/* Left Side */}
-          <div className="w-full lg:w-1/2">
+          {/* Left Side - Text and Image slide up */}
+          <motion.div
+            ref={leftRef}
+            initial={{ opacity: 0, y: 80 }}
+            animate={leftInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full lg:w-1/2"
+          >
             <h4 className="text-red-600 tracking-widest uppercase mb-2 text-sm md:text-base">
               PERFORMANCE
             </h4>
@@ -75,10 +80,16 @@ const Performance = () => {
               alt="Bike"
               className="mt-6 w-full rounded-lg object-cover"
             />
-          </div>
+          </motion.div>
 
-          {/* Right Side */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center mt-12 md:mt-20 lg:mt-40 gap-6 md:gap-8 lg:gap-10">
+          {/* Right Side - Slide in from right */}
+          <motion.div
+            ref={rightRef}
+            initial={{ opacity: 0, x: 100 }}
+            animate={rightInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="w-full lg:w-1/2 flex flex-col justify-center mt-12 md:mt-20 lg:mt-40 gap-6 md:gap-8 lg:gap-10"
+          >
             {performanceData.map((item) => (
               <div key={item.id} className="flex items-start gap-4">
                 <img
@@ -96,7 +107,7 @@ const Performance = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
 

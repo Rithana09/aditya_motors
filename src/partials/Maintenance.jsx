@@ -1,11 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Maintenance = () => {
   return (
-    <div className="
-      flex flex-col md:flex-row items-start
-      px-4 sm:px-6 md:px-16 py-8 sm:py-10 md:py-12
-    ">
+    <div
+      className="
+        flex flex-col md:flex-row items-start
+        px-4 sm:px-6 md:px-16 py-8 sm:py-10 md:py-12
+      "
+    >
       {/* Left Image */}
       <div className="w-full md:w-1/2 flex flex-col justify-end mb-8 md:mb-0">
         <img
@@ -18,8 +21,14 @@ const Maintenance = () => {
         />
       </div>
 
-      {/* Right Text Section */}
-      <div className="w-full md:w-1/2 flex flex-col justify-between">
+      {/* Right Text Section with animation */}
+      <motion.div
+        className="w-full md:w-1/2 flex flex-col justify-between"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         {/* Heading */}
         <p className="text-red-600 text-lg sm:text-xl md:text-2xl font-semibold mb-4">
           Professional Services
@@ -35,14 +44,14 @@ const Maintenance = () => {
 
         {/* Paragraph 1 */}
         <p className="text-gray-700 text-sm sm:text-base md:text-base mb-4 leading-relaxed">
-        Our top priority is making sure you’re happy with our service.
-         We take the time to listen to your concerns and provide personalized solutions.
+          Our top priority is making sure you’re happy with our service.
+          We take the time to listen to your concerns and provide personalized solutions.
         </p>
 
         {/* Paragraph 2 */}
         <p className="text-gray-700 text-sm sm:text-base md:text-base mb-6 leading-relaxed">
-        We understand how important your bike is to you. That's why we
-         prioritize quick repairs and maintenance to get you back on the road faster.
+          We understand how important your bike is to you. That's why we
+          prioritize quick repairs and maintenance to get you back on the road faster.
         </p>
 
         {/* Bottom Image */}
@@ -56,7 +65,7 @@ const Maintenance = () => {
             "
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

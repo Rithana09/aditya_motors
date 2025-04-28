@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full px-6 md:px-12 py-6 bg-gray-800 bg-opacity-90 shadow-lg">
+    <header className="fixed top-0 z-50 w-full px-6 md:px-12 py-3 bg-gray-800 bg-opacity-90 shadow-lg">
       <div className="flex items-center justify-between">
         {/* Logo on left */}
         <div className="flex-shrink-0">

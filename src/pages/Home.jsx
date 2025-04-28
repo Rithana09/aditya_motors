@@ -7,6 +7,7 @@ import ProfessionalGearSection from '../partials/ProfessionalGearSection'
 import HeroSection from '../partials/HeroSection'
 import Footer from '../partials/Footer'
 import Layout from '../partials/Layout';
+import Checklist from '../partials/Checklist'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
     <Layout>
        <div>
    <Banner />
+   <Checklist />
    <ServiceIntroduction />
    <Performance />
    <ProfessionalService />

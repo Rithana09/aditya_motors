@@ -1,20 +1,17 @@
 import React from "react";
-import {
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaFacebook,
-  FaTwitter,
-  FaYoutube,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebook, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
     <div className="w-full px-6 py-12 md:px-16 lg:px-32 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Head Office Section */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h2 className="text-4xl font-bold mb-2">HEAD OFFICE</h2>
           <p className="text-gray-600 mb-6">
             Don’t Hesitate to Contact Us or Come Directly to Our Workshop
@@ -26,7 +23,7 @@ const ContactSection = () => {
               <div>
                 <p className="font-bold">ADDRESS:</p>
                 <p className="text-gray-700">
-                GP Rajarathnam Rd, A Block, Milk Colony, Subramanyanagar,2 State, Rajajinagar, Bengaluru, Karnataka 560010
+                  GP Rajarathnam Rd, A Block, Milk Colony, Subramanyanagar, 2 State, Rajajinagar, Bengaluru, Karnataka 560010
                 </p>
               </div>
             </div>
@@ -57,10 +54,14 @@ const ContactSection = () => {
               <FaInstagram />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Let's Talk Form Section */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h2 className="text-4xl font-bold mb-2">LET’S TALK</h2>
           <p className="text-gray-600 mb-6">
             Feel free to ask a question or simply leave a comment.
@@ -91,14 +92,11 @@ const ContactSection = () => {
               className="w-full border border-gray-300 px-4 py-2"
             ></textarea>
 
-            <button
-              type="submit"
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 font-semibold"
-            >
-              SEND MESSAGE
+            <button className="mt-4 bg-red-600 text-white py-5 px-9 border border-transparent hover:bg-white hover:border-red-600 hover:text-red-600 transition text-sm font-medium">
+              SEND MESSAGE →
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

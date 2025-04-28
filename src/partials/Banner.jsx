@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import { FaWhatsapp, FaInstagram, FaTelegram } from "react-icons/fa"; // Import the icons
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const Banner = () => {
   return (
@@ -10,19 +10,24 @@ const Banner = () => {
         className="absolute inset-0 bg-cover bg-top"
         style={{
           backgroundImage: "url('/adityabannerr.png')",
-          backgroundPosition: "center -19%", // Moves the background image down
+          backgroundPosition: "center -19%",
         }}
       >
         {/* Right-side gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-l from-black/90 to-transparent" />
       </div>
 
-      {/* Content */}
+      {/* Header */}
       <Header />
 
-      {/* Text Content */}
+      {/* Animated Text Content */}
       <div className="relative z-20 px-6 py-20 md:px-16 h-full flex items-center justify-center md:justify-end">
-        <div className="text-left max-w-xl">
+        <motion.div
+          className="text-left max-w-xl"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <p className="text-lg sm:text-xl md:text-xl lg:text-2xl font-semibold text-white mb-4 opacity-80">
             For the love of biking
           </p>
@@ -39,11 +44,11 @@ const Banner = () => {
           </div>
 
           <div>
-            <button className="bg-red-600 text-white py-4 px-8 rounded-md hover:bg-red-700 transition duration-300 transform hover:scale-105 text-sm font-semibold shadow-lg">
+            <button className="bg-red-600 text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium">
               CONSULT NOW →
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

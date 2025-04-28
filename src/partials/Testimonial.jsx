@@ -1,27 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
     id: 1,
     text: "Aditya Motors is the best place I’ve taken my bike to. The staff are friendly, knowledgeable, and they use only genuine parts. My Honda runs smoother than ever!.",
-    name: "Edward Nichol",
+    name: "Manish",
     company: "THUNDER RACE",
-    image: "/testimonial1.jpg"
+    image: "/testimonial1.jpg",
   },
   {
     id: 2,
     text: "I had a sudden issue with my brakes and they fixed it in no time. Great pricing, honest service, and top-notch professionalism. Highly recommended!",
-    name: "Jane Smith",
+    name: "Ravi Singh",
     company: "SPEED MOTORS",
-    image: "/testimonial2.jpg"
+    image: "/testimonial2.jpg",
   },
   {
     id: 3,
     text: "It’s hard to find a garage you can trust. Aditya Motors has been my go-to for regular servicing. They explain everything clearly and always deliver on time...",
-    name: "John Doe",
+    name: "Jerish",
     company: "MOTO EXPERTS",
-    image: "/testimonial3.jpg"
-  }
+    image: "/testimonial3.jpg",
+  },
 ];
 
 const Testimonial = () => {
@@ -31,12 +32,26 @@ const Testimonial = () => {
     setActiveIndex(index);
   };
 
+  // Auto-pagination effect every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
     <div className="bg-black min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Column */}
-          <div className="text-white">
+          <motion.div
+            className="text-white"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-red-500 uppercase tracking-wider text-sm md:text-base mb-3">
               What our client say
             </h3>
@@ -44,17 +59,19 @@ const Testimonial = () => {
               TESTIMONIAL<br />FROM OUR<br />HAPPY CLIENT
             </h2>
             <p className="text-gray-400 max-w-md text-sm sm:text-base">
-            At Aditya Motors, customer satisfaction is our top priority.
-             Every service is carried out with precision, care, and a 
-             commitment to excellence. We take pride in delivering a
-              seamless experience — from regular maintenance to
-               complex repairs — ensuring your bike stays in peak condition.
-                Join the hundreds of riders who trust us for quality service they can count on.
+              At Aditya Motors, customer satisfaction is our top priority.
+              Every service is carried out with precision, care, and a commitment to excellence. We take pride in delivering a seamless experience — from regular maintenance to complex repairs — ensuring your bike stays in peak condition. Join the hundreds of riders who trust us for quality service they can count on.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Column */}
-          <div className="relative">
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             {/* Quote Icon */}
             <div className="absolute -top-6 -left-6 text-red-500 hidden sm:block">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
@@ -71,8 +88,12 @@ const Testimonial = () => {
                     {testimonials[activeIndex].text}
                   </p>
                   <div className="w-12 h-1 bg-red-500 mb-4"></div>
-                  <h4 className="text-lg sm:text-xl font-bold text-gray-900">{testimonials[activeIndex].name}</h4>
-                  <p className="text-gray-500 uppercase text-xs sm:text-sm tracking-wider">{testimonials[activeIndex].company}</p>
+                  <h4 className="text-lg sm:text-xl font-bold text-gray-900">
+                    {testimonials[activeIndex].name}
+                  </h4>
+                  <p className="text-gray-500 uppercase text-xs sm:text-sm tracking-wider">
+                    {testimonials[activeIndex].company}
+                  </p>
                 </div>
 
                 {/* Image */}
@@ -93,13 +114,13 @@ const Testimonial = () => {
                   key={index}
                   onClick={() => handleDotClick(index)}
                   className={`w-2.5 h-2.5 rounded-full transition-colors duration-300 ${
-                    index === activeIndex ? 'bg-red-500' : 'bg-gray-400'
+                    index === activeIndex ? "bg-red-500" : "bg-gray-400"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
