@@ -42,11 +42,12 @@ const DreamMotorbike = () => {
       >
         {/* Left Content */}
         <div className="lg:w-1/2 w-full flex flex-col justify-start space-y-6">
-          <p className="text-red-600 tracking-widest font-semibold">HIGH PERFORMANCE</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+          <p className="font-[jost] tracking-widest font-semibold"
+          style= {{ color: "#D33523" }}>HIGH PERFORMANCE</p>
+          <h1 className="text-3xl sm:text-4xl font-[jost] lg:text-5xl font-extrabold leading-tight">
             LET’S BUILD YOUR<br />DREAM MOTORBIKE
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 font-[Hind_Vadodara] text-lg">
             We offer a wide variety of services to meet all your bike repair and maintenance needs.
           </p>
 
@@ -62,7 +63,7 @@ const DreamMotorbike = () => {
                   {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
                 </button>
                 {openIndex === index && (
-                  <div className="bg-red-700 px-6 py-3 text-sm text-white">
+                  <div className="bg-[#D33523] font-[jost] px-6 py-3 text-sm text-white">
                     {item.content}
                   </div>
                 )}
@@ -98,13 +99,13 @@ const DreamMotorbike = () => {
             viewport={{ once: true }}
             className="mt-6 lg:ml-40 text-center lg:text-left space-y-2"
           >
-            <p className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-black">
+            <p className="text-3xl font-[jost] sm:text-4xl lg:text-4xl font-extrabold text-black">
               WE KEPT WHAT WE
             </p>
-            <p className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-black">
+            <p className="text-3xl font-[jost] sm:text-4xl lg:text-4xl font-extrabold text-black">
               LOVED ABOUT THE
             </p>
-            <p className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-black">
+            <p className="text-3xl font-[jost] sm:text-4xl lg:text-4xl font-extrabold text-black">
               MOTORBIKE
             </p>
 

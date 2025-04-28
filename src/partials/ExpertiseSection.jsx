@@ -35,7 +35,8 @@ const ExpertiseSection = () => {
           whileInView="visible"
           variants={slideUp}
           viewport={{ once: true }}
-          className="text-red-600 tracking-widest font-semibold"
+          className="font-[jost] tracking-widest font-semibold"
+          style= {{ color: "#D33523" }}
         >
           WHAT WE OFFER
         </motion.p>
@@ -44,7 +45,7 @@ const ExpertiseSection = () => {
           whileInView="visible"
           variants={slideUp}
           viewport={{ once: true }}
-          className="text-5xl mt-5 font-extrabold"
+          className="text-5xl mt-5 font-[jost] font-extrabold"
         >
           OUR EXPERTISE
         </motion.h2>
@@ -53,7 +54,7 @@ const ExpertiseSection = () => {
           whileInView="visible"
           variants={slideUp}
           viewport={{ once: true }}
-          className="text-gray-300 mt-5"
+          className="text-gray-300 font-[Hind_Vadodara] mt-5"
         >
           From minor fixes to complete overhauls, we’ve got you covered.
         </motion.p>

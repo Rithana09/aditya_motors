@@ -20,7 +20,7 @@ const ServiceIntroduction = () => {
           animate={isLeftInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h4 className="text-red-600 tracking-widest uppercase mb-2 mt-10 text-sm md:text-base">
+          <h4 className="text-red-600 tracking-widest font-[jost] uppercase mb-2 mt-10 text-sm md:text-base">
             About Us
           </h4>
           <h1 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold leading-tight w-auto sm:w-3/4 md:w-1/2 lg:w-[400px] xl:w-[900px]">
@@ -29,15 +29,13 @@ const ServiceIntroduction = () => {
 
 
           <p
-            className="mt-6 text-base md:text-xl text-gray-300"
-            style={{ fontFamily: '"Hind Vadodara", sans-serif' }}
+            className="mt-6 text-base font-[Hind_Vadodara] md:text-xl text-gray-300"
           >
             Whether you’re in need of a simple maintenance check or major repairs,
             we are here to keep your bike running smoothly.
           </p>
           <p
-            className="mt-4 text-base md:text-xl text-gray-300"
-            style={{ fontFamily: '"Hind Vadodara", sans-serif' }}
+            className="mt-4 text-base font-[Hind_Vadodara] md:text-xl text-gray-300"
           >
             As an authorized Honda service centre in Bengaluru, we are proud to offer
             Honda bike services with the best tools and expertise available. Whether
@@ -45,13 +43,12 @@ const ServiceIntroduction = () => {
             issue, we’re here to help.
           </p>
 
-          <button className="mt-6 text-red-600 hover:text-white text-sm md:text-base flex items-center gap-2">
-            Read More <span>&rarr;</span>
+          <button className="mt-6 font-[jost] text-red-600 hover:text-white text-sm md:text-base flex items-center gap-2">
+            READ MORE <span>&rarr;</span>
           </button>
 
           <ul
-            className="mt-8 mb-8 space-y-2 text-base md:text-xl"
-            style={{ fontFamily: '"Jost", sans-serif' }}
+            className="mt-8 mb-8 space-y-2 text-base md:text-xl font-jost"
           >
             {[
               "Brake Drum Cleaning & Adjustment/Replacement",
@@ -86,7 +83,7 @@ const ServiceIntroduction = () => {
 
           <div className="relative flex flex-col lg:flex-row items-start lg:items-center mt-4 sm:mb-6">
             <div className="lg:w-1/2 relative">
-              <p className="text-sm md:text-base lg:text-lg xl:text-xl font-bold leading-relaxed text-white w-full sm:w-full md:w-1/2 lg:w-[250px] xl:w-[350px] sm:mt-4 mb-7 md:mt-6">
+              <p className="text-sm font-[jost] md:text-base lg:text-lg xl:text-xl font-bold leading-relaxed text-white w-full sm:w-full md:w-1/2 lg:w-[250px] xl:w-[350px] sm:mt-4 mb-7 md:mt-6">
                 Work from scratch with bespoke frames and will simply tune up your bike to allow you
                 optimal enjoyment.
               </p>
@@ -99,8 +96,8 @@ const ServiceIntroduction = () => {
             />
           </div>
 
-          <button className="text-red-600 hover:text-white text-sm md:text-base flex items-center gap-2 mt-4">
-            Read More <span>&rarr;</span>
+          <button className="text-red-600 font-[jost] hover:text-white text-sm md:text-base flex items-center gap-2 mt-4">
+            READ MORE <span>&rarr;</span>
           </button>
         </motion.div>
       </div>

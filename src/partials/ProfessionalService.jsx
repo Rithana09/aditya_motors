@@ -7,7 +7,7 @@ const ProfessionalService = () => {
       {/* Banner Image */}
       <div
         className="w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url(/servicee8.webp)" }}
+        style={{ backgroundImage: "url(/hondabannerr3.jpeg)" }}
       >
         <div className="absolute inset-0 bg-black opacity-70"></div> {/* Overlay */}
 
@@ -22,8 +22,8 @@ const ProfessionalService = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-red-600 text-xl sm:text-2xl font-semibold"
-          >
+            className="font-[jost] text-xl sm:text-2xl lg:text-2xl font-semibold"
+            style= {{ color: "#D33523" }}  >
             PROFESSIONAL SERVICE
           </motion.p>
 
@@ -32,7 +32,7 @@ const ProfessionalService = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold mt-4"
+            className="text-white font-[jost,sans-serif] text-3xl lg:w-2/3 sm:text-4xl lg:text-6xl font-bold mt-4"
           >
             ATTENTION TO DETAIL
           </motion.h2>
@@ -42,7 +42,7 @@ const ProfessionalService = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-white text-sm sm:text-base lg:text-lg mt-6 max-w-full sm:max-w-4xl"
+            className="text-white lg:w-2/3 text-sm font-[Hind_Vadodara] sm:text-base lg:text-lg mt-6 max-w-full sm:max-w-4xl"
           >
             At Aditya Motors, we treat every bike as our own. Our expert technicians ensure that all services are performed with the utmost precision. Our goal is to get your bike running at its best, so you can ride with confidence.
           </motion.p>
@@ -52,9 +52,9 @@ const ProfessionalService = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="bg-red-600 text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium"
-          >
-            Consult Now →
+            className="font-[jost,sans-serif] text-white bg-[#D33523] mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium"
+            >
+            CONSULT NOW →
           </motion.button>
         </div>
       </div>

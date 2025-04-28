@@ -23,7 +23,7 @@ const Ideas = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-red-600 text-xl sm:text-2xl font-semibold"
+            className="text-red-600 text-xl font-[jost] sm:text-2xl font-semibold"
           >
             IDEAS AND CONCEPTS
           </motion.p>
@@ -33,7 +33,7 @@ const Ideas = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mt-4"
+            className="text-white text-3xl font-[jost] sm:text-4xl md:text-5xl font-bold mt-4"
           >
             UNIQUENESS
           </motion.h2>
@@ -43,23 +43,13 @@ const Ideas = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className="text-white text-sm sm:text-base md:text-lg mt-6 max-w-4xl mx-auto md:mx-0"
+            className="text-white font-[Hind_Vadodara] lg:w-2/3 text-sm sm:text-base md:text-lg mt-6 max-w-4xl mx-auto md:mx-0"
           >
             Our team is trained in handling all brands and models of bikes.
             We focus on providing high-quality service, no matter what bike you ride.
             As an authorized Honda service centre, we follow Honda's service
             guidelines and use genuine parts for your Honda bike.
           </motion.p>
-
-          <motion.button
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            viewport={{ once: true }}
-            className="bg-red-600 text-white mt-5 py-5 px-9 border border-transparent hover:bg-transparent hover:border-white transition duration-300 text-sm font-medium"
-          >
-            Consult Now →
-          </motion.button>
         </div>
       </div>
     </div>

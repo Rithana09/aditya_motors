@@ -45,7 +45,8 @@ const HondaBikeServices = () => {
     <div className="max-w-7xl mx-auto bg-white py-16 px-6 sm:px-8 md:px-16">
       {/* Heading */}
       <motion.h2
-        className="text-4xl font-extrabold font-serif italic text-red-600 text-center mb-12 uppercase tracking-tight"
+        className="text-4xl font-[jost] font-bold text-center mb-12 uppercase tracking-tight"
+        style= {{ color: "#D33523" }}
         initial="hidden"
         whileInView="visible"
         variants={slideUp}
@@ -67,9 +68,9 @@ const HondaBikeServices = () => {
           >
             <div className="flex items-center mb-6">
               <FaMotorcycle className="text-red-600 text-3xl mr-4" />
-              <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+              <h3 className="text-xl font-semibold font-[jost] text-gray-900">{service.title}</h3>
             </div>
-            <p className="text-gray-600 flex-1 text-sm sm:text-base mb-6">{service.description}</p>
+            <p className="text-gray-600 flex-1 font-[Hind_Vadodara] text-sm sm:text-base mb-6">{service.description}</p>
             <button className="mt-6 self-start bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition ease-in-out duration-300">
               Learn More
             </button>

@@ -8,12 +8,12 @@ const ContactSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Head Office Section */}
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-4xl font-bold mb-2">HEAD OFFICE</h2>
-          <p className="text-gray-600 mb-6">
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.3 }}  // Reduced the duration to 0.3 for a faster transition
+>
+          <h2 className="text-4xl font-[jost] font-bold mb-2">HEAD OFFICE</h2>
+          <p className="text-gray-600 font-[jost] mb-6">
             Don’t Hesitate to Contact Us or Come Directly to Our Workshop
           </p>
 
@@ -21,8 +21,8 @@ const ContactSection = () => {
             <div className="flex items-start gap-4">
               <FaMapMarkerAlt className="text-red-600 text-xl mt-1" />
               <div>
-                <p className="font-bold">ADDRESS:</p>
-                <p className="text-gray-700">
+                <p className="font-bold font-[jost]">ADDRESS:</p>
+                <p className="text-gray-700 font-[jost]">
                   GP Rajarathnam Rd, A Block, Milk Colony, Subramanyanagar, 2 State, Rajajinagar, Bengaluru, Karnataka 560010
                 </p>
               </div>
@@ -31,22 +31,22 @@ const ContactSection = () => {
             <div className="flex items-start gap-4">
               <FaPhoneAlt className="text-red-600 text-xl mt-1" />
               <div>
-                <p className="font-bold">PHONE:</p>
-                <p className="text-gray-700">+91 9343225633</p>
+                <p className="font-bold font-[jost]">PHONE:</p>
+                <p className="text-gray-700 font-[jost]">+91 9343225633</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <FaEnvelope className="text-red-600 text-xl mt-1" />
               <div>
-                <p className="font-bold">EMAIL:</p>
-                <p className="text-gray-700">adityamotorstech@gmail.com</p>
+                <p className="font-bold font-[jost]">EMAIL:</p>
+                <p className="text-gray-700 font-[jost]">adityamotorstech@gmail.com</p>
               </div>
             </div>
           </div>
 
           <div className="mt-8">
-            <p className="text-gray-600 mb-3">Follow our Social Media:</p>
+            <p className="text-gray-600 font-[jost] mb-3">Follow our Social Media:</p>
             <div className="flex gap-4 text-red-600 text-xl">
               <FaFacebook />
               <FaTwitter />
@@ -58,12 +58,12 @@ const ContactSection = () => {
 
         {/* Let's Talk Form Section */}
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-4xl font-bold mb-2">LET’S TALK</h2>
-          <p className="text-gray-600 mb-6">
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.3 }}  // Faster transition
+>
+          <h2 className="text-4xl font-[jost] font-bold mb-2">LET’S TALK</h2>
+          <p className="text-gray-600 font-[Hind_Vadodara] mb-6">
             Feel free to ask a question or simply leave a comment.
           </p>
 
@@ -92,7 +92,7 @@ const ContactSection = () => {
               className="w-full border border-gray-300 px-4 py-2"
             ></textarea>
 
-            <button className="mt-4 bg-red-600 text-white py-5 px-9 border border-transparent hover:bg-white hover:border-red-600 hover:text-red-600 transition text-sm font-medium">
+            <button className="mt-4 bg-[#D33523] font-[jost] text-white py-5 px-9 border border-transparent hover:bg-white hover:border-red-600 hover:text-red-600 transition text-sm font-medium">
               SEND MESSAGE →
             </button>
           </form>

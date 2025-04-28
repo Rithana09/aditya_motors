@@ -52,8 +52,9 @@ export default function Advantages() {
             className="rounded-lg w-full object-cover"
           />
           <div className="absolute bottom-0 left-0 bg-zinc-900 p-2 sm:p-4 max-w-[140px] sm:max-w-[200px]">
-  <p className="text-red-600 font-medium text-xs sm:text-sm tracking-wider">EXPERIENCED SINCE</p>
-  <p className="text-white text-3xl sm:text-6xl font-bold">2005</p>
+  <p className="text-red-600 font-medium font-[jost] text-xs sm:text-sm tracking-wider"
+  style= {{ color: "#D33523" }}>EXPERIENCED SINCE</p>
+  <p className="text-white text-3xl sm:text-6xl font-[jost] font-bold">2005</p>
 </div>
 
         </div>
@@ -61,21 +62,21 @@ export default function Advantages() {
         {/* Right side with advantages */}
         <div className="space-y-8">
           <div
-            className={`text-red-600 font-medium tracking-wider mb-2 ${slideUpClass}`}
-            ref={(el) => (advantageRefs.current[1] = el)}
+            className={` font-medium tracking-wider font-[jost] mb-2 ${slideUpClass}`}
+            ref={(el) => (advantageRefs.current[1] = el)}  style= {{ color: "#D33523" }}
           >
             OUR ADVANTAGES
           </div>
 
           <div
-            className={`text-5xl font-bold text-zinc-900 ${slideUpClass}`}
+            className={`text-5xl font-[jost] font-bold text-zinc-900 ${slideUpClass}`}
             ref={(el) => (advantageRefs.current[2] = el)}
           >
             WHY CHOOSE US
           </div>
 
           <div
-            className={`text-zinc-600 ${slideUpClass}`}
+            className={`text-zinc-600 font-[Hind_Vadodara] ${slideUpClass}`}
             ref={(el) => (advantageRefs.current[3] = el)}
           >
             We also provide servicing for electric bikes, ensuring they perform to their full potential. A thorough inspection of your bike to ensure every part is functioning properly.
@@ -90,7 +91,7 @@ export default function Advantages() {
               <div className="flex justify-center mb-4">
                 <Wrench className="h-12 w-12" />
               </div>
-              <h3 className="text-2xl font-bold">Expert Mechanics</h3>
+              <h3 className="text-2xl font-[jost] font-bold">Expert Mechanics</h3>
             </div>
 
             {/* Advantage 2 */}
@@ -101,7 +102,7 @@ export default function Advantages() {
               <div className="flex justify-center mb-4">
                 <Wallet className="h-12 w-12" />
               </div>
-              <h3 className="text-2xl font-bold">Reasonable Price</h3>
+              <h3 className="text-2xl font-[jost] font-bold">Reasonable Price</h3>
             </div>
 
             {/* Advantage 3 */}
@@ -112,7 +113,7 @@ export default function Advantages() {
               <div className="flex justify-center mb-4">
                 <Clock className="h-12 w-12" />
               </div>
-              <h3 className="text-2xl font-bold">Fast Work & Services</h3>
+              <h3 className="text-2xl font-[jost] font-bold">Fast Work & Services</h3>
             </div>
 
             {/* Advantage 4 */}
@@ -123,7 +124,7 @@ export default function Advantages() {
               <div className="flex justify-center mb-4">
                 <HandshakeIcon className="h-12 w-12" />
               </div>
-              <h3 className="text-2xl font-bold">Trusted & Professional</h3>
+              <h3 className="text-2xl font-[jost] font-bold">Trusted & Professional</h3>
             </div>
           </div>
         </div>

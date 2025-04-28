@@ -56,10 +56,10 @@ const HondaServicesShowcase = () => {
                                 {/* Text and button normally visible inside hover */}
                                 <div className="transition-all duration-500 transform group-hover:translate-y-0 translate-y-4 opacity-0 group-hover:opacity-100">
 
-                                    <p className="text-white text-[15px] sm:text-[16px] lg:text-[15px] font-semibold mb-4 leading-relaxed">
+                                    <p className="text-white font-[Hind_Vadodara] text-[15px] sm:text-[16px] lg:text-[15px] font-semibold mb-4 leading-relaxed">
                                         {item.description}
                                     </p>
-                                    <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2  text-sm font-semibold">
+                                    <button className="bg-[#D33523] font-[jost] hover:bg-red-700 text-white px-4 py-2  text-sm font-semibold">
                                         View All Services
                                     </button>
                                 </div>
@@ -68,7 +68,7 @@ const HondaServicesShowcase = () => {
                         </div>
 
                         {/* Bike Title */}
-                        <div className="bg-red-600 text-white text-center py-4 font-semibold text-lg sm:text-xl lg:text-2xl">
+                        <div className="bg-[#D33523] text-white text-center py-4 font-semibold text-lg sm:text-xl lg:text-2xl">
                             {item.title}
                         </div>
                     </motion.div>

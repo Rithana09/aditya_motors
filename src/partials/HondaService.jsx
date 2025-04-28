@@ -27,7 +27,7 @@ const HondaService = () => {
 
   const slideUp = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }, // Reduced duration
   };
 
   return (
@@ -37,13 +37,13 @@ const HondaService = () => {
         {/* Left Side - Heading, Description, Image */}
         <div className="w-full lg:w-1/2">
           <motion.h2
-            className="text-2xl sm:text-3xl font-bold text-red-600 mb-4 sm:mb-6"
+            className="text-2xl font-[jost] sm:text-3xl font-bold text-red-600 mb-4 sm:mb-6"
             initial="hidden"
             whileInView="visible"
             variants={slideUp}
             viewport={{ once: true }}
           >
-            Why Choose Aditya Motors For Your Honda Bike?
+            WHY CHOOSE ADITYA MOTORS FOR YOUR HONDA BIKE?
           </motion.h2>
 
           <motion.p
@@ -55,7 +55,7 @@ const HondaService = () => {
           >
             At Aditya Motors, we are proud to be an authorized Honda dealer,
             offering{' '}
-            <span className="text-red-600 underline">
+            <span className="text-red-600 font-[Hind_Vadodara] underline">
               specialized services for all Honda bikes
             </span>. Our team of expert technicians is trained to handle the unique
             needs of your Honda motorcycle or scooter, ensuring it continues to
@@ -65,18 +65,18 @@ const HondaService = () => {
           </motion.p>
 
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideUp}
-            viewport={{ once: true }}
-            className="w-full"
-          >
-            <img
-              src="/hondabike.jpeg"
-              alt="Honda Service"
-              className="rounded-lg w-full h-64 sm:h-80 md:h-[22rem] object-cover"
-            />
-          </motion.div>
+  initial="hidden"
+  whileInView="visible"
+  variants={slideUp}
+  viewport={{ once: false }} // This will ensure the transition happens every time it comes into view
+  className="w-full"
+>
+  <img
+    src="/honda5.avif"
+    alt="Honda Service"
+    className="rounded-lg w-full h-64 sm:h-80 md:h-[22rem] object-cover"
+  />
+</motion.div>
         </div>
 
         {/* Right Side - Cards */}

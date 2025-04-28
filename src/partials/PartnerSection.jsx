@@ -107,10 +107,11 @@ const PartnerSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h3 className="text-red-600 font-medium tracking-wide uppercase text-sm sm:text-base mb-2">
-            Brands that support us
+          <h3 className="font-medium tracking-wide uppercase text-sm sm:text-base mb-2"
+          style= {{ color: "#D33523" }}>
+            BRANDS THAT SUPPORT US
           </h3>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl font-[Hind_Vadodara] sm:text-4xl md:text-5xl font-bold text-gray-900">
             OUR PARTNERS
           </h2>
         </motion.div>

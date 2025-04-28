@@ -49,10 +49,10 @@ const ProfessionalGearSection = () => {
         custom={0}
         className="text-center mb-10"
       >
-        <p className="text-sm text-red-600 font-semibold tracking-wide">WHY CHOOSE US</p>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+        <p className="text-sm font-[jost] font-semibold  tracking-wide" style= {{ color: "#D33523" }}>WHY CHOOSE US</p>
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-[jost] font-bold text-black mt-2">
           WE ARE QUALIFIED &<br />
-          <span className="text-black">PROFESSIONAL</span>
+          <span className="text-black lg:text-6xl font-[jost]">PROFESSIONAL</span>
         </h1>
       </motion.div>
 
@@ -97,14 +97,13 @@ const ProfessionalGearSection = () => {
           <motion.h2
             variants={fadeUpVariant}
             custom={1}
-            className="text-2xl md:text-3xl font-bold text-red-600 mb-6"
-          >
+            className="text-2xl md:text-3xl font-[jost] font-bold mb-6"
+            style= {{ color: "#D33523" }}>
             We realize that you lead a busy life, so we have made it<br />
-            easy for you to drop off your vehicle{" "}
-            <span className="text-black font-bold">24/7.</span>
+            easy for you to drop off your vehicle 24/7.
           </motion.h2>
 
-          <motion.div variants={fadeUpVariant} custom={2} className="space-y-4">
+          <motion.div variants={fadeUpVariant} custom={2} className="space-y-4 font-[Hind_Vadodara]">
             <AccordionItem title="MAXIMUM SPEED & STABILITY">
               Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
               there live the blind texts. Separated they live in Bookmarksgrove right at the coast.
@@ -127,7 +126,7 @@ const ProfessionalGearSection = () => {
           <motion.button
             variants={fadeUpVariant}
             custom={4}
-            className="mt-6 px-8 py-3 border border-red-500 text-red-600 font-semibold rounded hover:bg-red-600 hover:text-white transition"
+            className="mt-6 px-8 py-3 border border-red-500 text-white bg-[#D33523] font-semibold font-[jost] hover:bg-red-600 hover:text-white transition"
           >
             READ MORE →
           </motion.button>

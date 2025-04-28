@@ -52,13 +52,13 @@ const Testimonial = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-red-500 uppercase tracking-wider text-sm md:text-base mb-3">
-              What our client say
+            <h3 className="uppercase font-[jost] text-sm md:text-base mb-3" style= {{ color: "#D33523" }}>
+              WHAT OUR CLIENT SAY
             </h3>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl  font-[jost] lg:text-6xl font-bold leading-tight mb-4">
               TESTIMONIAL<br />FROM OUR<br />HAPPY CLIENT
             </h2>
-            <p className="text-gray-400 max-w-md text-sm sm:text-base">
+            <p className="text-gray-400 font-[Hind_Vadodara] max-w-md text-sm sm:text-base">
               At Aditya Motors, customer satisfaction is our top priority.
               Every service is carried out with precision, care, and a commitment to excellence. We take pride in delivering a seamless experience — from regular maintenance to complex repairs — ensuring your bike stays in peak condition. Join the hundreds of riders who trust us for quality service they can count on.
             </p>
