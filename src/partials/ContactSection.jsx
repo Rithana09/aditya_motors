@@ -23,12 +23,17 @@ const ContactSection = () => {
               <div>
                 <p className="font-bold font-[jost]">ADDRESS:</p>
                 <p className="text-gray-700 font-[jost]">
-                  GP Rajarathnam Rd, A Block, Milk Colony, Subramanyanagar, 2 State, Rajajinagar, Bengaluru, Karnataka 560010
+                522/D, II State, 1 Block, Dr.Rajkumar Road, Near Orion Mall, Rajajinagar, BANGALORE - 560 010
                 </p>
-              </div>
+              </div> {/* Address Changed */}
             </div>
 
             <div className="flex items-start gap-4">
+            <FaPhoneAlt className="text-red-600 text-xl mt-1" />
+              <div>
+                <p className="font-bold font-[jost]">TEL:</p>
+                <p className="text-gray-700 font-[jost]">080 - 2357 8007</p> {/* Added Tel Number */}
+              </div>
               <FaPhoneAlt className="text-red-600 text-xl mt-1" />
               <div>
                 <p className="font-bold font-[jost]">PHONE:</p>

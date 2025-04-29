@@ -1,5 +1,11 @@
 import React from "react";
-import { FaWhatsapp, FaInstagram, FaTelegram } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaTelegram,
+  FaYoutube,
+  FaFacebook,
+} from "react-icons/fa";
 import Header from "./Header";
 
 const Layout = ({ children }) => {
@@ -30,12 +36,28 @@ const Layout = ({ children }) => {
           <FaInstagram className="w-6 h-6 sm:w-10 sm:h-10" />
         </a>
         <a
-          href="https://t.me/aditya_motors"  
+          href="https://t.me/aditya_motors"
           target="_blank"
           rel="noopener noreferrer"
           className="text-red-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
         >
           <FaTelegram className="w-6 h-6 sm:w-10 sm:h-10" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCtoTGhzSZ7yIZiH22z4FIgw" // Added Youtube link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
+        >
+          <FaYoutube className="w-6 h-6 sm:w-10 sm:h-10" />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61570780145074" // Added Facebook link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-900 dark:text-red-800 hover:text-green-500 transition-colors duration-200"
+        >
+          <FaFacebook className="w-6 h-6 sm:w-10 sm:h-10" />
         </a>
       </div>
     </div>

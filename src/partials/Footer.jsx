@@ -45,7 +45,14 @@ const Footer = () => {
             <ul className="space-y-2 text-sm sm:text-base text-gray-300">
               <li className="flex flex-row items-start gap-2">
                 <FaMapMarkerAlt className="mt-1 font-[Hind_Vadodara]" />
-                <span>GP Rajarathnam Rd, A Block, Milk Colony, Subramanyanagar,2 State, Rajajinagar, Bengaluru, Karnataka 560010</span>
+                <span>522/D, II State, 1 Block, Dr.Rajkumar Road, Near Orion Mall, Rajajinagar, BANGALORE - 560 010 
+                 
+                </span> {/* Address Changed */}
+                
+              </li>
+              <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
+                <FaPhoneAlt />
+                <span>Tel : 080 - 2357 8007</span> {/* Added Tel Number */}
               </li>
               <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
                 <FaPhoneAlt />
