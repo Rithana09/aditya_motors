@@ -9,6 +9,7 @@ import {
   FaMapMarkerAlt,
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { HiLocationMarker } from "react-icons/hi";
 
 const Footer = () => {
   return (
@@ -45,18 +46,21 @@ const Footer = () => {
             <ul className="space-y-2 text-sm sm:text-base text-gray-300">
               <li className="flex flex-row items-start gap-2">
                 <FaMapMarkerAlt className="mt-1 font-[Hind_Vadodara]" />
-                <span>522/D, II State, 1 Block, Dr.Rajkumar Road, Near Orion Mall, Rajajinagar, BANGALORE - 560 010 
-                 
-                </span> {/* Address Changed */}
-                
+                <div className="flex flex-col text-sm text-white leading-relaxed">
+                  <div>522/D, II State, 1 Block, <br />
+                    Dr.Rajkumar Road, Rajajinagar,</div>
+                  <div className="inline-flex items-center">
+                    <HiLocationMarker className="text-red-600 mr-1" />
+                    <span className=" text-red-600 font-semibold">
+                      Opposite to Rameshwaram Cafe,
+                    </span>
+                  </div>
+                  <div>BANGALORE - 560 010, +91 9343225633</div>
+                </div>
               </li>
               <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
                 <FaPhoneAlt />
                 <span>Tel : 080 - 2357 8007</span> {/* Added Tel Number */}
-              </li>
-              <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
-                <FaPhoneAlt />
-                <span>+91 9343225633</span>
               </li>
               <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
                 <FaEnvelope />

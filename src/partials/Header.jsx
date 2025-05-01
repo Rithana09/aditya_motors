@@ -79,27 +79,20 @@ const Header = () => {
               <span className="font-medium text-xl">+91 9343225633</span>
             </a>
           </div>
-
-          {/* Search Icon */}
-          <button
-            onClick={toggleSearch}
-            className="text-white hover:text-gray-600 cursor-pointer transition-colors duration-200"
-          >
-            <FiSearch size={20} />
-          </button>
-
-          {/* Search Input */}
-          {isSearchOpen && (
-            <input
-              type="text"
-              placeholder="Search..."
-              className="ml-4 p-2 rounded bg-gray-700 text-white w-64"
-            />
-          )}
         </nav>
 
         {/* Hamburger Icon for Mobile */}
-        <div className="lg:hidden flex items-center">
+        <div className="lg:hidden flex items-center justify-between w-full">
+          {/* Contact on left */}
+          <a
+            href="tel:+919343225633"
+            className="text-white font-bold text-sm ml-5 flex items-center gap-2"
+          >
+            <FaBicycle size={20} />
+            +91 9343225633
+          </a>
+
+          {/* Hamburger icon on right */}
           <button onClick={toggleMenu} className="text-white">
             {isMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
           </button>
@@ -128,16 +121,6 @@ const Header = () => {
             Contact
           </Link>
 
-          {/* Bike Icon and Phone Number (Mobile) */}
-          <div className="flex items-center space-x-4 pt-4">
-            <a
-              href="tel:+919343225633" // This makes the phone number clickable in the mobile menu
-              className="flex items-center space-x-2 text-white cursor-pointer hover:text-red-600 transition-colors duration-200"
-            >
-              <FaBicycle size={20} />
-              <span className="font-medium text-xl">+91 9343225633</span>
-            </a>
-          </div>
         </div>
       )}
     </header>

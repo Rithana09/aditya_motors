@@ -7,7 +7,7 @@ const CustomerService = () => {
       {/* Left Image */}
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <img
-          src="/hondabanner6.webp"
+          src="/scooty3.jpeg"
           alt="Customer Service"
           className="w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 h-auto mx-auto rounded-lg object-contain"
         />

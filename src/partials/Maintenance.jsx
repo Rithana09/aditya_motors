@@ -12,7 +12,7 @@ const Maintenance = () => {
       {/* Left Image */}
       <div className="w-full md:w-1/2 flex flex-col justify-end mb-8 md:mb-0">
         <img
-          src="/bike5.jpg"
+          src="/scooty4.avif"
           alt="Maintenance"
           className="
             w-3/4 sm:w-4/5 md:w-[90%] lg:w-[90%]

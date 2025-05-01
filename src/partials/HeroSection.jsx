@@ -13,10 +13,10 @@ const HeroSection = () => {
       className="relative bg-cover bg-center 
         h-[80vh] sm:h-[90vh] md:h-screen 
         flex items-center"
-      style={{ backgroundImage: "url('/bike4.jpg')" }}
+      style={{ backgroundImage: "url('/scooty1.jpeg')" }}
     >
       {/* Optional dark overlay */}
-      <div className="absolute inset-0 bg-black opacity-30 z-0" />
+      <div className="absolute inset-0 bg-black opacity-60 z-0" />
 
       {/* Text block */}
       <div

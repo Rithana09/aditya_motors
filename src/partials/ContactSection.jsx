@@ -23,7 +23,7 @@ const ContactSection = () => {
               <div>
                 <p className="font-bold font-[jost]">ADDRESS:</p>
                 <p className="text-gray-700 font-[jost]">
-                522/D, II State, 1 Block, Dr.Rajkumar Road, Near Orion Mall, Rajajinagar, BANGALORE - 560 010
+                522/D, II State, 1 Block, Dr.Rajkumar Road, Near Orion Mall, Rajajinagar,Opposite to Rameshwaram Cafe, BANGALORE - 560 010
                 </p>
               </div> {/* Address Changed */}
             </div>

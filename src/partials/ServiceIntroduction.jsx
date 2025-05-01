@@ -75,7 +75,7 @@ const ServiceIntroduction = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         >
           <img
-            src="/bike.png"
+            src="/scooty5.avif"
             alt="Motorcycle"
             className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover rounded"
           />

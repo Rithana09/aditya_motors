@@ -7,13 +7,15 @@ const Banner = () => {
   const navigate = useNavigate();
 
   return (
+    <>
+      <Header />
     <div className="relative w-full h-screen text-white">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/hondabanner5.webp')",
-          backgroundPosition: "center center", 
+          backgroundImage: "url('scooty2.jpg')",
+          backgroundPosition: "center top", 
           backgroundSize: "cover", 
         }}
       >
@@ -21,7 +23,7 @@ const Banner = () => {
       </div>
 
       {/* Header */}
-      <Header />
+    
 
       {/* Animated Text Content */}
       <div className="relative z-20 px-6 py-20 md:px-16 h-full flex items-center justify-center md:justify-end">
@@ -56,6 +58,7 @@ const Banner = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 
