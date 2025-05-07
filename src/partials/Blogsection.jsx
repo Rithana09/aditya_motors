@@ -18,7 +18,7 @@ export default function BlogSection() {
           >
             <div className="relative">
               <img
-                src="/blogg1.jpg"
+                src="/honda9.jpeg"
                 alt="Motorcycle in garage"
                 width={800}
                 height={400}
@@ -64,7 +64,7 @@ export default function BlogSection() {
           >
             <div className="relative">
               <img
-                src="/blog2.jpg"
+                src="/honda8.jpg"
                 alt="Custom motorcycle"
                 width={800}
                 height={400}

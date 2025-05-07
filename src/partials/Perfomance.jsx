@@ -80,7 +80,7 @@ const Performance = () => {
             </h2>
 
             <img
-              src="/bikee1.jpg"
+              src="/dio2.png"
               alt="Bike"
               className="w-full rounded-lg object-cover"
             />

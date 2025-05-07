@@ -47,9 +47,9 @@ export default function Advantages() {
           ref={(el) => (advantageRefs.current[0] = el)}
         >
           <img
-            src="/motor2.avif"
+            src="/honda7.png"
             alt="Mechanic working in garage"
-            className="rounded-lg w-full object-cover"
+            className="rounded-lg w-3/4 object-cover"
           />
           <div className="absolute bottom-0 left-0 bg-zinc-900 p-2 sm:p-4 max-w-[140px] sm:max-w-[200px]">
             <p className="text-red-600 font-medium font-[jost] text-xs sm:text-sm tracking-wider"

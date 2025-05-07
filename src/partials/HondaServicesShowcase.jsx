@@ -14,14 +14,14 @@ const expertiseData = [
         description: 'Dio Experts Specialized care for your Honda Dio at Aditya Motors.Genuine Parts Assurance Only authentic Honda parts used.Top-Tier Maintenance Skilled technicians for your Honda Dio.Certified Excellence Trusted Honda Dio servicing at Aditya Motors.Complete Dio Care Comprehensive repairs and check-ups.',
     },
     {
-        title: 'Shine 125',
-        image: '/honda3.webp',
-        description: 'Premium Care Certified servicing for Honda Shine 125.Original Parts Guarantee Genuine Honda parts for your Shine 125.Expert Hands Skilled technicians dedicated to Honda Dio BS-VI maintenance.Trusted Quality Aditya Motors’ excellence in Dio BS-VI repairs.Seamless Service Comprehensive check-ups for your Shine 125..',
+        title: 'Yamaha',
+        image: '/yamaha2.jpg',
+        description: 'Premium Care Certified servicing for Yamaha.Original Parts Guarantee Genuine parts for your Yamaha.Expert Hands Skilled technicians dedicated to Honda Dio BS-VI maintenance.Trusted Quality Aditya Motors’ excellence in Dio BS-VI repairs.Seamless Service Comprehensive check-ups for your Yamaha',
     },
     {
-        title: 'SP 125',
-        image: '/honda4.webp',
-        description: 'Unparalleled Service Top-tier service for Honda SP 125 at Aditya Motors.Expert Care Best care for your SP 125.Authentic Parts Genuine Honda parts for SP 125.Precision Repairs Specialist technicians for SP 125.Complete Solutions All-encompassing care for your SP 125..',
+        title: 'Access',
+        image: '/access1.jpg',
+        description: 'Unparalleled Service Top-tier service for Access 125 at Aditya Motors.Authentic Parts Genuine Honda parts for Access.Precision Repairs Specialist technicians for Access.Complete Solutions All-encompassing care for your Access.',
     },
 ];
 

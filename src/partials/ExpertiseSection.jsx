@@ -4,15 +4,15 @@ import { motion } from 'framer-motion';
 const expertiseData = [
   {
     title: 'Build Handcrafted',
-    image: '/servicee3.jpg',
+    image: '/jupiter1.jpg',
   },
   {
-    title: 'Auto Repair and',
-    image: '/servicee4.jpg',
+    title: 'Auto Repair',
+    image: '/tvs.jpg',
   },
   {
     title: 'Classic Motorcycles',
-    image: '/servicee5.jpg',
+    image: '/tvs3.jpg',
   },
   {
     title: 'Bodywork and Part',

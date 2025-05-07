@@ -73,7 +73,7 @@ const DreamMotorbike = () => {
 
           <div className="mt-10">
             <img
-              src="/servicee2.jpg"
+              src="/dio.webp"
               alt="Motorbike Feature Detail"
               className="rounded-lg w-full mx-auto object-cover"
             />
@@ -83,7 +83,7 @@ const DreamMotorbike = () => {
         {/* Right Image */}
         <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start">
           <motion.img
-            src="/motor1.avif"
+            src="/jupiter2.webp"
             alt="Motorbike Builder"
             className="rounded-lg w-full max-w-[95%] max-h-[500px] object-contain"
             initial="hidden"
