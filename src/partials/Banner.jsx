@@ -8,19 +8,21 @@ const Banner = () => {
 
   return (
     <>
-      <Header />
-    <div className="relative w-full h-screen text-white">
+
+<div className="relative w-full h-screen text-white">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('scooty2.jpg')",
+          backgroundImage: "url('banner12.avif')",
           backgroundPosition: "center top", 
           backgroundSize: "cover", 
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
+      <Header />
+   
 
       {/* Header */}
     

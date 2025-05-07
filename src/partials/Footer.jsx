@@ -50,13 +50,13 @@ const Footer = () => {
                 <div className="flex flex-col text-sm text-white leading-relaxed">
                   <div>522/D, II State, 1 Block, <br />
                     Dr.Rajkumar Road, Rajajinagar,</div>
-                    <div className="inline-flex items-center">
-  <HiLocationMarker className="text-purple-600 mr-1" />
-  <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent font-semibold">
-    Opposite to Rameshwaram Cafe,
-  </span>
-</div>
-                  <div>BANGALORE - 560 010, +91 9343225633</div>
+                  <div className="inline-flex items-center">
+                    <HiLocationMarker className="text-purple-600 mr-1" />
+                    <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent font-semibold">
+                      Opposite to Rameshwaram Cafe,
+                    </span>
+                  </div>
+                  <div>BANGALORE - 560 010, <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent font-semibold"> +91 9343225633</span></div>
                 </div>
               </li>
               <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
@@ -64,21 +64,21 @@ const Footer = () => {
                 <span>Tel : 080 - 2357 8007</span> {/* Added Tel Number */}
               </li>
               <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
-  <a
-    href="https://www.adityamotors.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-white font-[Hind_Vadodara] hover:underline"
-  >
-    <FaGlobe />
-    <span>www.adityamotors.com</span>
-  </a>
-</li>
+                <a
+                  href="https://www.adityamotors.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white font-[Hind_Vadodara] hover:underline"
+                >
+                  <FaGlobe />
+                  <span>www.adityamotor.com</span>
+                </a>
+              </li>
               <li className="flex items-center cursor-pointer font-[Hind_Vadodara] gap-2">
                 <FaEnvelope />
                 <span>adityamotorstech@gmail.com</span>
               </li>
-              
+
             </ul>
           </div>
 
