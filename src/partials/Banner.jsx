@@ -7,25 +7,22 @@ const Banner = () => {
   const navigate = useNavigate();
 
   return (
-    <>
 
-<div className="relative w-full h-screen text-white">
+
+    <div className="relative w-full h-screen text-white">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover lg:mt-19 bg-center"
         style={{
-          backgroundImage: "url('banner12.avif')",
-          backgroundPosition: "center top", 
-          backgroundSize: "cover", 
+          backgroundImage: "url('adityabanner1.webp')",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
         }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-      </div>
-      <Header />
-   
+      />
+      <div className="absolute inset-0 bg-black opacity-30"></div>
 
-      {/* Header */}
-    
+      <Header />
+
 
       {/* Animated Text Content */}
       <div className="relative z-20 px-6 py-20 md:px-16 h-full flex items-center justify-center md:justify-end">
@@ -60,7 +57,7 @@ const Banner = () => {
         </motion.div>
       </div>
     </div>
-    </>
+
   );
 };
 
