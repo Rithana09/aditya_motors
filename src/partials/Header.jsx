@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { FiSearch } from "react-icons/fi";
 import { FaBicycle } from "react-icons/fa";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import ScrollToTopLink from '../partials/ScrollToTopLink';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,58 +20,58 @@ const Header = () => {
       <div className="flex items-center justify-between">
         {/* Logo on left */}
         <div className="flex-shrink-0">
-          <Link to="/">
+          <ScrollToTopLink to="/">
             <img
               src="/adityalogo.png"
               alt="Logo"
               className="w-32 h-auto object-contain"
             />
-          </Link>
+          </ScrollToTopLink>
         </div>
 
         {/* Right side navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
-          <Link
+          <ScrollToTopLink
             to="/"
             className="text-white font-medium uppercase py-2 tracking-[1.1px] hover:text-red-600"
           >
             Home
-          </Link>
-          <Link
+          </ScrollToTopLink>
+          <ScrollToTopLink
             to="/about"
             className="text-white font-medium uppercase py-2 tracking-[1.1px] hover:text-red-600"
           >
             About
-          </Link>
-          <Link
+          </ScrollToTopLink>
+          <ScrollToTopLink
             to="/service"
             className="text-white font-medium uppercase py-2 tracking-[1.1px] hover:text-red-600"
           >
             Services
-          </Link>
-          <Link
+          </ScrollToTopLink>
+          <ScrollToTopLink
             to="/honda"
             className="text-white font-medium uppercase py-2 tracking-[1.1px] hover:text-red-600"
           >
             Honda
-          </Link>
-          <Link
+          </ScrollToTopLink>
+          <ScrollToTopLink
             to="/blog"
             className="text-white font-medium uppercase py-2 tracking-[1.1px] hover:text-red-600"
           >
             Blog
-          </Link>
-          <Link
+          </ScrollToTopLink>
+          <ScrollToTopLink
             to="/contact"
             className="text-white font-medium uppercase py-2 tracking-[1.1px] hover:text-red-600"
           >
             Contact
-          </Link>
+          </ScrollToTopLink>
 
           {/* Bike Icon and Phone Number (Desktop) */}
           <div className="flex items-center space-x-4 pl-4">
             <a
-              href="tel:+919343225633" // This makes the phone number clickable
+              href="tel:+919343225633"
               className="flex items-center space-x-2 text-white cursor-pointer hover:text-red-600 transition-colors duration-200"
             >
               <FaBicycle size={20} />
@@ -102,25 +101,24 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-16 left-0 w-full bg-gray-900 bg-opacity-90 hover:text-red-600 text-white py-4 px-6 space-y-4">
-          <Link to="/" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+          <ScrollToTopLink to="/" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             Home
-          </Link>
-          <Link to="/about" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+          </ScrollToTopLink>
+          <ScrollToTopLink to="/about" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             About
-          </Link>
-          <Link to="/service" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+          </ScrollToTopLink>
+          <ScrollToTopLink to="/service" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             Services
-          </Link>
-          <Link to="/honda" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+          </ScrollToTopLink>
+          <ScrollToTopLink to="/honda" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             Honda
-          </Link>
-          <Link to="/blog" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+          </ScrollToTopLink>
+          <ScrollToTopLink to="/blog" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             Blog
-          </Link>
-          <Link to="/contact" className="text-white font-medium py-2 uppercase block hover:text-red-600">
+          </ScrollToTopLink>
+          <ScrollToTopLink to="/contact" className="text-white font-medium py-2 uppercase block hover:text-red-600">
             Contact
-          </Link>
-
+          </ScrollToTopLink>
         </div>
       )}
     </header>
