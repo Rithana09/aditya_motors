@@ -54,17 +54,26 @@ const Footer = () => {
             <ul className="space-y-2 text-sm sm:text-base text-gray-300">
               <li className="flex flex-row items-start gap-2">
                 <FaMapMarkerAlt className="mt-1 font-[Hind_Vadodara]" />
-                <div className="flex flex-col text-sm text-white leading-relaxed">
-                  <div>522/D, II State, 1 Block, <br />
-                    Dr.Rajkumar Road, Rajajinagar,</div>
+                <a
+                  href="https://www.google.com/maps?q=522/D,+II+State,+1+Block,+Dr.Rajkumar+Road,+Rajajinagar,+Bangalore+-+560010"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col text-sm text-white leading-relaxed hover:underline"
+                >
+                  <div>522/D, II State, 1 Block,<br />
+                    Dr.Rajkumar Road, Rajajinagar,
+                  </div>
                   <div className="inline-flex items-center">
                     <HiLocationMarker className="text-purple-600 mr-1" />
                     <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent font-semibold">
                       Opposite to Rameshwaram Cafe,
                     </span>
                   </div>
-                  <div>BANGALORE - 560 010, <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent font-semibold"> +91 9343225633</span></div>
-                </div>
+                  <div>
+                    BANGALORE - 560 010,
+                    <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent font-semibold"> +91 9343225633</span>
+                  </div>
+                </a>
               </li>
               <li className="flex items-center gap-2 font-[Hind_Vadodara]">
                 <FaPhoneAlt />

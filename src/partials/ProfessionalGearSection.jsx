@@ -67,7 +67,7 @@ const ProfessionalGearSection = () => {
         >
           {/* Left large image */}
           <img
-            src="/honda6.webp"
+            src="/scootypep.png"
             alt="Motorcycle Guy"
             className="w-full md:w-2/3 h-96 object-cover rounded-lg"
           />

@@ -8,7 +8,7 @@ const expertiseData = [
   },
   {
     title: 'Auto Repair',
-    image: '/tvs.jpg',
+    image: '/pleasure.webp',
   },
   {
     title: 'Classic Motorcycles',
