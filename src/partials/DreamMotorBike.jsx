@@ -73,7 +73,7 @@ const DreamMotorbike = () => {
 
           <div className="mt-10">
             <img
-              src="/access2.jpg"
+              src="/dio.webp"
               alt="Motorbike Feature Detail"
               className="rounded-lg w-full mx-auto object-cover"
             />

@@ -13,7 +13,7 @@ const HeroSection = () => {
       className="relative bg-cover bg-center 
         h-[80vh] sm:h-[90vh] md:h-screen 
         flex items-center"
-      style={{ backgroundImage: "url('/scooty1.jpeg')" }}
+      style={{ backgroundImage: "url('/tvs7.webp')" }}
     >
       {/* Optional dark overlay */}
       <div className="absolute inset-0 bg-black opacity-60 z-0" />

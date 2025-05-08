@@ -7,7 +7,7 @@ const ProfessionalService = () => {
       {/* Banner Image */}
       <div
         className="w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url(/hondabannerr3.jpeg)" }}
+        style={{ backgroundImage: "url(/tvs1.webp)" }}
       >
         <div className="absolute inset-0 bg-black opacity-70"></div> {/* Overlay */}
 
