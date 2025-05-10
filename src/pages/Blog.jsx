@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import TopBanner from '../partials/TopBanner';
 import BlogSection from '../partials/Blogsection';
 import Footer from '../partials/Footer';
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
   useEffect(() => {
@@ -11,6 +12,9 @@ const Blog = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Aditya Motors | Blog</title>
+        </Helmet>
         <TopBanner
           title="BLOG AND NEWS"
           subtitle="RECENT NEWS"

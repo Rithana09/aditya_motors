@@ -6,6 +6,7 @@ import Maintenance from '../partials/Maintenance';
 import Testimonial from '../partials/Testimonial';
 import PartnerSection from '../partials/PartnerSection';
 import Footer from '../partials/Footer';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   useEffect(() => {
@@ -15,6 +16,9 @@ const About = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Aditya Motors | About Us</title> {/* Added Title */}
+        </Helmet>
         <TopBanner
           title="ABOUT US"
           subtitle="HISTORY OF GARAGE"

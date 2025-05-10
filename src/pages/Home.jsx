@@ -8,13 +8,16 @@ import HeroSection from '../partials/HeroSection'
 import Footer from '../partials/Footer'
 import Layout from '../partials/Layout';
 import Checklist from '../partials/Checklist'
-
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   return (
     <>
     <Layout>
        <div>
+        <Helmet>
+        <title>Aditya Motors | Home</title> 
+        </Helmet>
    <Banner />
    <Checklist />
    <ServiceIntroduction />

@@ -4,6 +4,7 @@ import HondaService from '../partials/HondaService';
 import HondaBikeServices from '../partials/HondaBikeServices';
 import HondaServicesShowcase from '../partials/HondaServicesShowcase';
 import Footer from '../partials/Footer';
+import { Helmet } from 'react-helmet';
 
 const Honda = () => {
   useEffect(() => {
@@ -13,6 +14,9 @@ const Honda = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Aditya Motors | Honda</title>
+        </Helmet>
         <TopBanner
           title="WHAT WE DO"
           subtitle="HONDA"

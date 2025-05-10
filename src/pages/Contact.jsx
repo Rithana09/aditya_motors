@@ -3,6 +3,7 @@ import TopBanner from '../partials/TopBanner';
 import ContactSection from '../partials/ContactSection';
 import MapLocation from '../partials/MapLocation';
 import Footer from '../partials/Footer';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   useEffect(() => {
@@ -12,6 +13,9 @@ const Contact = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Aditya Motors | Contact</title>
+        </Helmet>
         <TopBanner
           title="GET IN TOUCH"
           subtitle="CONTACT US"

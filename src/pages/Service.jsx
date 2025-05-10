@@ -4,6 +4,7 @@ import DreamMotorBike from '../partials/DreamMotorBike';
 import ExpertiseSection from '../partials/ExpertiseSection';
 import Advantages from '../partials/Advantages';
 import Footer from '../partials/Footer';
+import { Helmet } from 'react-helmet';
 
 const Service = () => {
   useEffect(() => {
@@ -13,6 +14,9 @@ const Service = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Aditya Motors | Services</title>
+        </Helmet>
         <TopBanner
           title="WHAT WE OFFER"
           subtitle="SERVICES"

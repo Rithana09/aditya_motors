@@ -55,7 +55,7 @@ const Footer = () => {
               <li className="flex flex-row items-start gap-2">
                 <FaMapMarkerAlt className="mt-1 font-[Hind_Vadodara]" />
                 <a
-                  href="https://www.google.com/maps?q=522/D,+II+State,+1+Block,+Dr.Rajkumar+Road,+Rajajinagar,+Bangalore+-+560010"
+                  href="http://google.com/maps/place/Aditya+Motors/@13.0080922,77.5520798,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x3bae3d8249724ad1:0xdb5b47fa79986979!2sGP+Rajarathnam+Rd,+A+Block,+Milk+Colony,+Subramanyanagar,2+State,+Rajajinagar,+Bengaluru,+Karnataka+560010!2m2!1d77.5546547!2d13.008087!3m5!1s0x3bae3d8249724ad1:0xdb5b47fa79986979!8m2!3d13.008087!4d77.5546547!16s%2Fg%2F1tfsrb08?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col text-sm text-white leading-relaxed hover:underline"
